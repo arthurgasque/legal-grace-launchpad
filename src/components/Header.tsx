@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Scale } from "lucide-react";
+import { Menu, X } from "lucide-react";
+import logo from "@/assets/logo-medeiros.png";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -33,17 +34,14 @@ const Header = () => {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-background/95 backdrop-blur-sm shadow-md" : "bg-transparent"
+        isScrolled ? "bg-background/98 backdrop-blur-sm shadow-md" : "bg-transparent"
       }`}
     >
       <nav className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <div className="flex items-center gap-2 animate-fade-in">
-            <Scale className="h-8 w-8 text-accent" />
-            <span className="text-xl font-poppins font-bold text-primary">
-              Silva & Associados
-            </span>
+          <div className="flex items-center gap-3 animate-fade-in">
+            <img src={logo} alt="Medeiros Jr. Advocacia" className="h-12 w-auto" />
           </div>
 
           {/* Desktop Menu */}
@@ -59,7 +57,7 @@ const Header = () => {
             ))}
             <Button
               variant="default"
-              className="bg-gradient-gold hover:opacity-90 transition-opacity shadow-gold"
+              className="bg-gradient-red hover:opacity-90 transition-opacity shadow-red"
               onClick={() => scrollToSection("contato")}
             >
               Entrar em Contato
@@ -90,7 +88,7 @@ const Header = () => {
               ))}
               <Button
                 variant="default"
-                className="bg-gradient-gold hover:opacity-90 transition-opacity w-full mt-2"
+                className="bg-gradient-red hover:opacity-90 transition-opacity w-full mt-2"
                 onClick={() => scrollToSection("contato")}
               >
                 Entrar em Contato

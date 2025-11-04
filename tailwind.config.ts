@@ -47,27 +47,26 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        navy: {
-          darker: "hsl(var(--navy-darker))",
-          dark: "hsl(var(--navy-dark))",
-          DEFAULT: "hsl(var(--primary))",
+        black: {
+          light: "hsl(var(--black-light))",
+          DEFAULT: "hsl(var(--black))",
         },
-        gold: {
-          light: "hsl(var(--gold-light))",
-          DEFAULT: "hsl(var(--gold))",
-          dark: "hsl(var(--gold-dark))",
+        red: {
+          light: "hsl(var(--red-light))",
+          DEFAULT: "hsl(var(--red))",
+          dark: "hsl(var(--red-dark))",
         },
       },
       backgroundImage: {
         'gradient-hero': 'var(--gradient-hero)',
-        'gradient-gold': 'var(--gradient-gold)',
+        'gradient-red': 'var(--gradient-red)',
         'gradient-overlay': 'var(--gradient-overlay)',
       },
       boxShadow: {
         'sm': 'var(--shadow-sm)',
         'md': 'var(--shadow-md)',
         'lg': 'var(--shadow-lg)',
-        'gold': 'var(--shadow-gold)',
+        'red': 'var(--shadow-red)',
       },
       fontFamily: {
         'poppins': ['Poppins', 'sans-serif'],

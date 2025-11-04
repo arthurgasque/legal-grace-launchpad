@@ -40,8 +40,8 @@ const Contact = () => {
     {
       icon: Mail,
       title: "E-mail",
-      info: "contato@escritorio.com.br",
-      link: "mailto:contato@escritorio.com.br",
+      info: "contato@medeirosjr.adv.br",
+      link: "mailto:contato@medeirosjr.adv.br",
     },
     {
       icon: MapPin,
@@ -52,7 +52,7 @@ const Contact = () => {
   ];
 
   return (
-    <section id="contato" className="py-20 sm:py-24 lg:py-32 bg-secondary/30">
+    <section id="contato" className="py-20 sm:py-24 lg:py-32 bg-secondary/50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-poppins font-bold text-primary mb-4">
@@ -68,11 +68,11 @@ const Contact = () => {
           {contactInfo.map((item, index) => (
             <Card
               key={index}
-              className="border-border hover:border-accent transition-all hover:shadow-gold animate-fade-in"
+              className="border-border hover:border-accent transition-all hover:shadow-red animate-fade-in"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <CardContent className="p-6 text-center">
-                <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-accent/10 mb-4">
+                <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-secondary mb-4">
                   <item.icon className="h-8 w-8 text-accent" />
                 </div>
                 <h3 className="text-lg font-poppins font-semibold text-primary mb-2">
@@ -141,7 +141,7 @@ const Contact = () => {
               </div>
               <Button
                 type="submit"
-                className="w-full bg-gradient-gold hover:opacity-90 shadow-gold"
+                className="w-full bg-gradient-red hover:opacity-90 shadow-red"
                 disabled={isSubmitting}
               >
                 {isSubmitting ? (

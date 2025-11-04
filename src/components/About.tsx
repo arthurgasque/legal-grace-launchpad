@@ -3,9 +3,9 @@ import { Award, Users, TrendingUp } from "lucide-react";
 
 const About = () => {
   const stats = [
-    { icon: Award, value: "15+", label: "Anos de Experiência" },
-    { icon: Users, value: "500+", label: "Clientes Atendidos" },
-    { icon: TrendingUp, value: "95%", label: "Taxa de Sucesso" },
+    { icon: Award, value: "20+", label: "Anos de Experiência" },
+    { icon: Users, value: "800+", label: "Clientes Atendidos" },
+    { icon: TrendingUp, value: "98%", label: "Taxa de Sucesso" },
   ];
 
   return (
@@ -19,16 +19,16 @@ const About = () => {
             </h2>
             <div className="space-y-4 text-foreground/80 text-base sm:text-lg leading-relaxed">
               <p>
-                Com mais de 15 anos de atuação, nosso escritório se consolidou como referência
-                em assessoria jurídica de excelência. Trabalhamos com dedicação e transparência
-                para garantir os melhores resultados aos nossos clientes.
+                O <strong>Medeiros Jr. Advocacia</strong> se consolidou como referência em assessoria
+                jurídica de excelência, trabalhando com dedicação e transparência para garantir os
+                melhores resultados aos nossos clientes.
               </p>
               <p>
-                Nossa equipe é composta por profissionais altamente qualificados, especializados
-                em diversas áreas do direito, sempre atualizados com as mudanças legislativas
-                e jurisprudenciais.
+                Nossa equipe é composta por profissionais altamente qualificados e especializados
+                em diversas áreas do Direito, sempre atualizados com as mudanças legislativas
+                e jurisprudenciais mais recentes.
               </p>
-              <p className="text-accent font-semibold text-xl italic">
+              <p className="text-accent font-semibold text-xl italic border-l-4 border-accent pl-4">
                 "Experiência, ética e comprometimento com seus direitos."
               </p>
             </div>
@@ -59,7 +59,7 @@ const About = () => {
                 alt="Nossa equipe"
                 className="w-full h-full object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-navy-darker/50 to-transparent"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
             </div>
           </div>
         </div>

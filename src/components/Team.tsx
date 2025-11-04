@@ -8,24 +8,24 @@ import lawyer3 from "@/assets/lawyer-3.jpg";
 const Team = () => {
   const team = [
     {
-      name: "Dra. Maria Silva Santos",
+      name: "Dra. Juliana Medeiros",
       specialty: "Direito de Família e Sucessões",
       image: lawyer1,
-      email: "maria.silva@escritorio.com.br",
+      email: "juliana@medeirosjr.adv.br",
       whatsapp: "5511999999999",
     },
     {
-      name: "Dr. Carlos Eduardo Mendes",
-      specialty: "Direito Trabalhista e Previdenciário",
+      name: "Dr. Ricardo Medeiros Jr.",
+      specialty: "Direito Trabalhista e Civil",
       image: lawyer2,
-      email: "carlos.mendes@escritorio.com.br",
+      email: "ricardo@medeirosjr.adv.br",
       whatsapp: "5511888888888",
     },
     {
-      name: "Dr. Roberto Almeida Junior",
-      specialty: "Direito Civil e Contratos",
+      name: "Dr. Paulo Henrique Costa",
+      specialty: "Direito Empresarial e Contratos",
       image: lawyer3,
-      email: "roberto.almeida@escritorio.com.br",
+      email: "paulo@medeirosjr.adv.br",
       whatsapp: "5511777777777",
     },
   ];
@@ -47,46 +47,48 @@ const Team = () => {
           {team.map((member, index) => (
             <Card
               key={index}
-              className="border-border hover:shadow-lg transition-all duration-300 animate-fade-in-up group"
+              className="border-border hover:shadow-lg transition-all duration-300 animate-fade-in-up group overflow-hidden"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <CardContent className="p-6">
-                <div className="relative overflow-hidden rounded-xl mb-4">
+              <CardContent className="p-0">
+                <div className="relative overflow-hidden">
                   <img
                     src={member.image}
                     alt={member.name}
                     className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-navy-darker/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
                 </div>
-                <h3 className="text-xl font-poppins font-semibold text-primary mb-2">
-                  {member.name}
-                </h3>
-                <p className="text-accent font-medium mb-4">{member.specialty}</p>
-                <div className="flex gap-2">
-                  <Button
-                    variant="outline"
-                    size="sm"
-                    className="flex-1 hover:border-accent hover:text-accent"
-                    onClick={() => window.open(`mailto:${member.email}`)}
-                  >
-                    <Mail className="h-4 w-4 mr-2" />
-                    E-mail
-                  </Button>
-                  <Button
-                    variant="default"
-                    size="sm"
-                    className="flex-1 bg-accent hover:bg-accent/90"
-                    onClick={() =>
-                      window.open(
-                        `https://wa.me/${member.whatsapp}?text=Olá, gostaria de agendar uma consulta`,
-                        "_blank"
-                      )
-                    }
-                  >
-                    <MessageCircle className="h-4 w-4 mr-2" />
-                    WhatsApp
-                  </Button>
+                <div className="p-6">
+                  <h3 className="text-xl font-poppins font-semibold text-primary mb-2">
+                    {member.name}
+                  </h3>
+                  <p className="text-accent font-medium mb-4">{member.specialty}</p>
+                  <div className="flex gap-2">
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      className="flex-1 hover:border-accent hover:text-accent"
+                      onClick={() => window.open(`mailto:${member.email}`)}
+                    >
+                      <Mail className="h-4 w-4 mr-2" />
+                      E-mail
+                    </Button>
+                    <Button
+                      variant="default"
+                      size="sm"
+                      className="flex-1 bg-accent hover:bg-accent/90"
+                      onClick={() =>
+                        window.open(
+                          `https://wa.me/${member.whatsapp}?text=Olá, gostaria de agendar uma consulta`,
+                          "_blank"
+                        )
+                      }
+                    >
+                      <MessageCircle className="h-4 w-4 mr-2" />
+                      WhatsApp
+                    </Button>
+                  </div>
                 </div>
               </CardContent>
             </Card>
