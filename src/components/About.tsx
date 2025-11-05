@@ -3,9 +3,9 @@ import { Award, Users, TrendingUp } from "lucide-react";
 
 const About = () => {
   const stats = [
-    { icon: Award, value: "20+", label: "Anos de Experiência" },
-    { icon: Users, value: "800+", label: "Clientes Atendidos" },
-    { icon: TrendingUp, value: "98%", label: "Taxa de Sucesso" },
+    { icon: Award, value: "XX", label: "Anos de Experiência" },
+    { icon: Users, value: "XX", label: "Clientes Atendidos" },
+    { icon: TrendingUp, value: "XX%", label: "Taxa de Sucesso" },
   ];
 
   return (

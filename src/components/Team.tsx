@@ -1,32 +1,26 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Mail, MessageCircle } from "lucide-react";
-import lawyer1 from "@/assets/lawyer-1.jpg";
-import lawyer2 from "@/assets/lawyer-2.jpg";
-import lawyer3 from "@/assets/lawyer-3.jpg";
+import { Mail, MessageCircle, User } from "lucide-react";
 
 const Team = () => {
   const team = [
     {
-      name: "Dra. Juliana Medeiros",
-      specialty: "Direito de Família e Sucessões",
-      image: lawyer1,
-      email: "juliana@medeirosjr.adv.br",
-      whatsapp: "5511999999999",
+      name: "[Nome do Advogado(a)]",
+      specialty: "[Especialidade]",
+      email: "XXXXXXXX",
+      whatsapp: "XXXXXXXX",
     },
     {
-      name: "Dr. Ricardo Medeiros Jr.",
-      specialty: "Direito Trabalhista e Civil",
-      image: lawyer2,
-      email: "ricardo@medeirosjr.adv.br",
-      whatsapp: "5511888888888",
+      name: "[Nome do Advogado(a)]",
+      specialty: "[Especialidade]",
+      email: "XXXXXXXX",
+      whatsapp: "XXXXXXXX",
     },
     {
-      name: "Dr. Paulo Henrique Costa",
-      specialty: "Direito Empresarial e Contratos",
-      image: lawyer3,
-      email: "paulo@medeirosjr.adv.br",
-      whatsapp: "5511777777777",
+      name: "[Nome do Advogado(a)]",
+      specialty: "[Especialidade]",
+      email: "XXXXXXXX",
+      whatsapp: "XXXXXXXX",
     },
   ];
 
@@ -51,13 +45,8 @@ const Team = () => {
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <CardContent className="p-0">
-                <div className="relative overflow-hidden">
-                  <img
-                    src={member.image}
-                    alt={member.name}
-                    className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                <div className="relative overflow-hidden bg-secondary/50 flex items-center justify-center h-80">
+                  <User className="w-24 h-24 text-muted-foreground/30" />
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-poppins font-semibold text-primary mb-2">

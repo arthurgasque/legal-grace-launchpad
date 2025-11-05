@@ -34,20 +34,20 @@ const Contact = () => {
     {
       icon: Phone,
       title: "Telefone",
-      info: "(11) 3456-7890",
-      link: "tel:+551134567890",
+      info: "XXXXXXXX",
+      link: "#",
     },
     {
       icon: Mail,
       title: "E-mail",
-      info: "contato@medeirosjr.adv.br",
-      link: "mailto:contato@medeirosjr.adv.br",
+      info: "XXXXXXXX",
+      link: "#",
     },
     {
       icon: MapPin,
       title: "Endereço",
-      info: "Av. Paulista, 1000 - São Paulo, SP",
-      link: "https://maps.google.com",
+      info: "XXXXXXXX",
+      link: "#",
     },
   ];
 
