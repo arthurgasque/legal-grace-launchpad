@@ -50,7 +50,9 @@ const Header = () => {
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className="text-sm font-medium text-foreground hover:text-accent transition-colors"
+                className={`text-sm font-medium hover:text-accent transition-colors ${
+                  isScrolled ? "text-foreground" : "text-white"
+                }`}
               >
                 {item.label}
               </button>
@@ -66,7 +68,9 @@ const Header = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-foreground"
+            className={`md:hidden transition-colors ${
+              isScrolled ? "text-foreground" : "text-white"
+            }`}
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
@@ -75,7 +79,7 @@ const Header = () => {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="md:hidden py-4 animate-fade-in">
+          <div className="md:hidden py-4 animate-fade-in bg-background/98 backdrop-blur-sm rounded-lg">
             <div className="flex flex-col gap-4">
               {menuItems.map((item) => (
                 <button
