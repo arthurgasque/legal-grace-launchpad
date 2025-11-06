@@ -28,8 +28,8 @@ All colors MUST be HSL.
     --muted: 0 0% 96%;
     --muted-foreground: 0 0% 45%;
 
-    /* Red accent - brand color */
-    --accent: 0 85% 45%;
+    /* Red accent - brand color #B71C1C */
+    --accent: 0 72% 37%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
@@ -44,23 +44,28 @@ All colors MUST be HSL.
     /* Custom tokens for Medeiros Jr. design */
     --black: 0 0% 10%;
     --black-light: 0 0% 20%;
-    --red: 0 85% 45%;
-    --red-light: 0 85% 55%;
-    --red-dark: 0 85% 35%;
+    --red: 0 72% 37%;
+    --red-light: 0 72% 47%;
+    --red-dark: 0 72% 27%;
+    --gray-light: 0 0% 97%;
+    --gray-medium: 0 0% 93%;
 
     /* Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(0 0% 10%) 0%, hsl(0 0% 20%) 100%);
-    --gradient-red: linear-gradient(135deg, hsl(0 85% 35%) 0%, hsl(0 85% 45%) 100%);
-    --gradient-overlay: linear-gradient(180deg, rgba(26, 26, 26, 0.85) 0%, rgba(26, 26, 26, 0.95) 100%);
+    --gradient-hero: linear-gradient(135deg, rgba(26, 26, 26, 0.8) 0%, rgba(26, 26, 26, 0.6) 100%);
+    --gradient-red: linear-gradient(135deg, hsl(0 72% 37%) 0%, hsl(0 72% 47%) 100%);
+    --gradient-overlay: linear-gradient(180deg, rgba(26, 26, 26, 0.75) 0%, rgba(26, 26, 26, 0.85) 100%);
+    --gradient-dark: linear-gradient(135deg, hsl(0 0% 10%) 0%, hsl(0 0% 15%) 100%);
 
     /* Shadows */
     --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
     --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.12);
     --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.16);
-    --shadow-red: 0 4px 16px rgba(200, 30, 30, 0.25);
+    --shadow-red: 0 4px 20px rgba(183, 28, 28, 0.3);
+    --shadow-card: 0 2px 12px rgba(0, 0, 0, 0.08);
 
     /* Transitions */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-slow: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 

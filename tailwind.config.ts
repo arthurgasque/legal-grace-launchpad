@@ -56,21 +56,28 @@ export default {
           DEFAULT: "hsl(var(--red))",
           dark: "hsl(var(--red-dark))",
         },
+        gray: {
+          light: "hsl(var(--gray-light))",
+          medium: "hsl(var(--gray-medium))",
+        },
       },
       backgroundImage: {
         'gradient-hero': 'var(--gradient-hero)',
         'gradient-red': 'var(--gradient-red)',
         'gradient-overlay': 'var(--gradient-overlay)',
+        'gradient-dark': 'var(--gradient-dark)',
       },
       boxShadow: {
         'sm': 'var(--shadow-sm)',
         'md': 'var(--shadow-md)',
         'lg': 'var(--shadow-lg)',
         'red': 'var(--shadow-red)',
+        'card': 'var(--shadow-card)',
       },
       fontFamily: {
-        'poppins': ['Poppins', 'sans-serif'],
-        'sans': ['Inter', 'sans-serif'],
+        sans: ["Inter", "sans-serif"],
+        poppins: ["Poppins", "sans-serif"],
+        playfair: ["Playfair Display", "serif"],
       },
       borderRadius: {
         lg: "var(--radius)",
