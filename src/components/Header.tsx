@@ -1,11 +1,14 @@
 import { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import logo from "@/assets/logo-medeiros.png";
 
 const Header = () => {
+  const location = useLocation();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const isCartaPage = location.pathname === '/carta-ao-cliente';
 
   useEffect(() => {
     const handleScroll = () => {
@@ -35,6 +38,7 @@ const Header = () => {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        isCartaPage ? "bg-primary/95 backdrop-blur-sm shadow-md" :
         isScrolled ? "bg-background/98 backdrop-blur-sm shadow-md" : "bg-transparent"
       }`}
     >
@@ -53,7 +57,7 @@ const Header = () => {
                   key={item.id}
                   onClick={() => scrollToSection(item.id)}
                   className={`text-sm font-medium hover:text-accent transition-colors ${
-                    isScrolled ? "text-foreground" : "text-white"
+                    isCartaPage ? "text-white" : isScrolled ? "text-foreground" : "text-white"
                   }`}
                 >
                   {item.label}
@@ -63,7 +67,7 @@ const Header = () => {
                   key={item.id}
                   href={item.id}
                   className={`text-sm font-medium hover:text-accent transition-colors ${
-                    isScrolled ? "text-foreground" : "text-white"
+                    isCartaPage ? "text-white" : isScrolled ? "text-foreground" : "text-white"
                   }`}
                 >
                   {item.label}

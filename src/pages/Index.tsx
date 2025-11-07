@@ -4,7 +4,7 @@ import BrazilBanner from "@/components/BrazilBanner";
 import About from "@/components/About";
 import Services from "@/components/Services";
 import Team from "@/components/Team";
-import Testimonials from "@/components/Testimonials";
+
 import FAQ from "@/components/FAQ";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
@@ -21,7 +21,6 @@ const Index = () => {
         <About />
         <Services />
         <Team />
-        <Testimonials />
         <FAQ />
         <Contact />
       </main>

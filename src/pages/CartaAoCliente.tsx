@@ -24,8 +24,8 @@ const CartaAoCliente = () => {
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-4xl mx-auto text-center">
               <Button
-                variant="ghost"
-                className="mb-6 text-white hover:text-accent"
+                variant="link"
+                className="mb-6 text-white hover:text-white/80 p-0"
                 onClick={() => navigate("/")}
               >
                 <ArrowLeft className="mr-2 h-4 w-4" />
