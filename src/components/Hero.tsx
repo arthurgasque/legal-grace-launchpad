@@ -1,14 +1,16 @@
+import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Scale } from "lucide-react";
 import heroImage from "@/assets/hero-law-office.jpg";
 
 const Hero = () => {
-  const scrollToContact = () => {
-    const element = document.getElementById("contato");
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => setScrollY(window.scrollY);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const handleWhatsAppClick = () => {
     window.open(
@@ -22,47 +24,72 @@ const Hero = () => {
       id="inicio"
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
-      {/* Background Image with Overlay */}
-      <div className="absolute inset-0 z-0">
+      {/* Background Image with Parallax */}
+      <div 
+        className="absolute inset-0 z-0"
+        style={{
+          transform: `translateY(${scrollY * 0.5}px)`,
+          transition: "transform 0.1s ease-out"
+        }}
+      >
         <img
           src={heroImage}
-          alt="Medeiros Jr. Advocacia - Escritório de Advocacia"
-          className="w-full h-full object-cover"
+          alt="Medeiros Jr. Advocacia - Escritório de Advocacia Premium"
+          className="w-full h-[120%] object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-hero"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/70"></div>
       </div>
 
       {/* Content */}
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 pt-20">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 pt-20 pb-32">
         <div className="max-w-5xl mx-auto text-center">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-6 py-3 mb-8 animate-fade-in">
+          <div 
+            className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-6 py-3 mb-8"
+            data-aos="fade-down"
+            data-aos-duration="800"
+          >
             <Scale className="h-5 w-5 text-accent" />
-            <span className="text-white font-medium">Advocacia de Excelência</span>
+            <span className="text-white font-medium tracking-wide">Advocacia de Excelência</span>
           </div>
 
-          <h1 className="text-4xl sm:text-5xl lg:text-7xl font-playfair font-bold text-white mb-6 animate-fade-in-up leading-tight">
-            Comprometimento e confiança para{" "}
-            <span className="text-accent">defender seus direitos</span>
+          <h1 
+            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-playfair font-bold text-white mb-6 leading-tight"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+          >
+            Compromisso, transparência e{" "}
+            <span className="text-accent">excelência jurídica</span> para defender seus direitos
           </h1>
           
-          <p className="text-lg sm:text-xl lg:text-2xl text-white/95 mb-10 animate-fade-in-up font-light max-w-3xl mx-auto leading-relaxed">
-            Atuação ética e especializada em diversas áreas do Direito, com foco total nos seus interesses.
+          <p 
+            className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/90 mb-10 font-light max-w-4xl mx-auto leading-relaxed"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="400"
+          >
+            Atuação ética, moderna e especializada nas principais áreas do Direito
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up">
+          <div 
+            className="flex flex-col sm:flex-row gap-4 justify-center"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="600"
+          >
             <Button
               size="lg"
-              className="bg-gradient-red hover:opacity-90 transition-all shadow-red text-base sm:text-lg px-8 py-7 hover:scale-105"
+              className="bg-gradient-red hover:opacity-90 transition-all shadow-red text-base sm:text-lg px-8 py-6 sm:py-7 hover:scale-105 font-semibold"
               onClick={handleWhatsAppClick}
             >
-              Falar no WhatsApp
+              Fale Conosco
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
             <Button
               size="lg"
               variant="outline"
-              className="border-2 border-white text-white hover:bg-white hover:text-primary text-base sm:text-lg px-8 py-7 transition-all hover:scale-105"
+              className="border-2 border-white bg-transparent text-white hover:bg-white hover:text-primary text-base sm:text-lg px-8 py-6 sm:py-7 transition-all hover:scale-105 font-semibold"
               onClick={() => {
                 const element = document.getElementById("sobre");
                 if (element) element.scrollIntoView({ behavior: "smooth" });
