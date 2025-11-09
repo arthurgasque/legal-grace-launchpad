@@ -18,6 +18,27 @@ const Header = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Close mobile menu on ESC key and prevent body scroll
+  useEffect(() => {
+    const handleEscape = (e: KeyboardEvent) => {
+      if (e.key === "Escape" && isMobileMenuOpen) {
+        setIsMobileMenuOpen(false);
+      }
+    };
+
+    if (isMobileMenuOpen) {
+      document.addEventListener("keydown", handleEscape);
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+
+    return () => {
+      document.removeEventListener("keydown", handleEscape);
+      document.body.style.overflow = "unset";
+    };
+  }, [isMobileMenuOpen]);
+
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -96,64 +117,66 @@ const Header = () => {
         </div>
 
         {/* Mobile Menu Overlay */}
-        {isMobileMenuOpen && (
-          <div 
-            className="fixed inset-0 bg-black/60 backdrop-blur-sm z-40 md:hidden animate-fade-in"
-            onClick={() => setIsMobileMenuOpen(false)}
-          />
-        )}
+        <div 
+          className={`fixed inset-0 bg-black/60 backdrop-blur-sm z-40 md:hidden transition-opacity duration-300 ${
+            isMobileMenuOpen ? "opacity-100" : "opacity-0 pointer-events-none"
+          }`}
+          onClick={() => setIsMobileMenuOpen(false)}
+        />
 
         {/* Mobile Menu */}
-        {isMobileMenuOpen && (
-          <div className="fixed top-20 left-4 right-4 z-50 md:hidden animate-scale-in">
-            <div className="bg-white rounded-2xl shadow-2xl overflow-hidden">
-              <div className="flex flex-col py-3">
-                {menuItems.map((item, index) => (
-                  item.isAnchor ? (
-                    <button
-                      key={item.id}
-                      onClick={() => {
-                        scrollToSection(item.id);
-                        setIsMobileMenuOpen(false);
-                      }}
-                      className="text-left text-base font-medium text-foreground hover:text-accent hover:bg-gray-light transition-all py-4 px-6 border-b border-gray-medium last:border-0 active:bg-gray-medium"
-                      style={{
-                        animationDelay: `${index * 50}ms`
-                      }}
-                    >
-                      {item.label}
-                    </button>
-                  ) : (
-                    <Link
-                      key={item.id}
-                      to={item.id}
-                      className="text-left text-base font-medium text-foreground hover:text-accent hover:bg-gray-light transition-all py-4 px-6 border-b border-gray-medium last:border-0 active:bg-gray-medium"
-                      onClick={() => setIsMobileMenuOpen(false)}
-                      style={{
-                        animationDelay: `${index * 50}ms`
-                      }}
-                    >
-                      {item.label}
-                    </Link>
-                  )
-                ))}
-              </div>
-              <div className="p-4 bg-gray-light">
-                <Button
-                  variant="default"
-                  size="lg"
-                  className="bg-gradient-red hover:opacity-90 transition-opacity w-full shadow-red font-semibold text-base py-6"
-                  onClick={() => {
-                    scrollToSection("contato");
-                    setIsMobileMenuOpen(false);
-                  }}
-                >
-                  Entrar em Contato
-                </Button>
-              </div>
+        <div className={`fixed top-20 left-4 right-4 z-50 md:hidden transition-all duration-300 ${
+          isMobileMenuOpen 
+            ? "opacity-100 translate-y-0" 
+            : "opacity-0 -translate-y-4 pointer-events-none"
+        }`}>
+          <div className="bg-white rounded-2xl shadow-2xl overflow-hidden">
+            <div className="flex flex-col py-3">
+              {menuItems.map((item, index) => (
+                item.isAnchor ? (
+                  <button
+                    key={item.id}
+                    onClick={() => {
+                      scrollToSection(item.id);
+                      setIsMobileMenuOpen(false);
+                    }}
+                    className="text-left text-base font-medium text-foreground hover:text-accent hover:bg-gray-light transition-all py-4 px-6 border-b border-gray-medium last:border-0 active:bg-gray-medium active:scale-[0.98]"
+                    style={{
+                      transitionDelay: isMobileMenuOpen ? `${index * 30}ms` : "0ms"
+                    }}
+                  >
+                    {item.label}
+                  </button>
+                ) : (
+                  <Link
+                    key={item.id}
+                    to={item.id}
+                    className="text-left text-base font-medium text-foreground hover:text-accent hover:bg-gray-light transition-all py-4 px-6 border-b border-gray-medium last:border-0 active:bg-gray-medium active:scale-[0.98]"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                    style={{
+                      transitionDelay: isMobileMenuOpen ? `${index * 30}ms` : "0ms"
+                    }}
+                  >
+                    {item.label}
+                  </Link>
+                )
+              ))}
+            </div>
+            <div className="p-4 bg-gray-light">
+              <Button
+                variant="default"
+                size="lg"
+                className="bg-gradient-red hover:opacity-90 transition-all w-full shadow-red font-semibold text-base py-6 active:scale-[0.98]"
+                onClick={() => {
+                  scrollToSection("contato");
+                  setIsMobileMenuOpen(false);
+                }}
+              >
+                Entrar em Contato
+              </Button>
             </div>
           </div>
-        )}
+        </div>
       </nav>
     </header>
   );
