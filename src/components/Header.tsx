@@ -85,49 +85,72 @@ const Header = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className={`md:hidden transition-colors ${
-              isScrolled ? "text-foreground" : "text-white"
+            className={`md:hidden transition-all hover:scale-110 active:scale-95 ${
+              isCartaPage ? "text-white" : isScrolled ? "text-foreground" : "text-white"
             }`}
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            aria-label={isMobileMenuOpen ? "Fechar menu" : "Abrir menu"}
           >
-            {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            {isMobileMenuOpen ? <X className="h-7 w-7" /> : <Menu className="h-7 w-7" />}
           </button>
         </div>
 
+        {/* Mobile Menu Overlay */}
+        {isMobileMenuOpen && (
+          <div 
+            className="fixed inset-0 bg-black/60 backdrop-blur-sm z-40 md:hidden animate-fade-in"
+            onClick={() => setIsMobileMenuOpen(false)}
+          />
+        )}
+
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="md:hidden py-4 animate-fade-in bg-background/98 backdrop-blur-sm rounded-lg">
-            <div className="flex flex-col gap-4">
-              {menuItems.map((item) => (
-                item.isAnchor ? (
-                  <button
-                    key={item.id}
-                    onClick={() => {
-                      scrollToSection(item.id);
-                      setIsMobileMenuOpen(false);
-                    }}
-                    className="text-left text-sm font-medium text-foreground hover:text-accent transition-colors py-2"
-                  >
-                    {item.label}
-                  </button>
-                ) : (
-                  <Link
-                    key={item.id}
-                    to={item.id}
-                    className="text-left text-sm font-medium text-foreground hover:text-accent transition-colors py-2"
-                    onClick={() => setIsMobileMenuOpen(false)}
-                  >
-                    {item.label}
-                  </Link>
-                )
-              ))}
-              <Button
-                variant="default"
-                className="bg-gradient-red hover:opacity-90 transition-opacity w-full mt-2"
-                onClick={() => scrollToSection("contato")}
-              >
-                Entrar em Contato
-              </Button>
+          <div className="fixed top-20 left-4 right-4 z-50 md:hidden animate-scale-in">
+            <div className="bg-white rounded-2xl shadow-2xl overflow-hidden">
+              <div className="flex flex-col py-3">
+                {menuItems.map((item, index) => (
+                  item.isAnchor ? (
+                    <button
+                      key={item.id}
+                      onClick={() => {
+                        scrollToSection(item.id);
+                        setIsMobileMenuOpen(false);
+                      }}
+                      className="text-left text-base font-medium text-foreground hover:text-accent hover:bg-gray-light transition-all py-4 px-6 border-b border-gray-medium last:border-0 active:bg-gray-medium"
+                      style={{
+                        animationDelay: `${index * 50}ms`
+                      }}
+                    >
+                      {item.label}
+                    </button>
+                  ) : (
+                    <Link
+                      key={item.id}
+                      to={item.id}
+                      className="text-left text-base font-medium text-foreground hover:text-accent hover:bg-gray-light transition-all py-4 px-6 border-b border-gray-medium last:border-0 active:bg-gray-medium"
+                      onClick={() => setIsMobileMenuOpen(false)}
+                      style={{
+                        animationDelay: `${index * 50}ms`
+                      }}
+                    >
+                      {item.label}
+                    </Link>
+                  )
+                ))}
+              </div>
+              <div className="p-4 bg-gray-light">
+                <Button
+                  variant="default"
+                  size="lg"
+                  className="bg-gradient-red hover:opacity-90 transition-opacity w-full shadow-red font-semibold text-base py-6"
+                  onClick={() => {
+                    scrollToSection("contato");
+                    setIsMobileMenuOpen(false);
+                  }}
+                >
+                  Entrar em Contato
+                </Button>
+              </div>
             </div>
           </div>
         )}
