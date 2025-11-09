@@ -106,8 +106,14 @@ const Header = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className={`md:hidden transition-all hover:scale-110 active:scale-95 ${
+            className={`md:hidden transition-all hover:scale-110 active:scale-95 relative z-50 ${
+              isMobileMenuOpen 
+                ? "bg-white rounded-full p-2 shadow-lg" 
+                : ""
+            } ${
               isCartaPage ? "text-white" : isScrolled ? "text-foreground" : "text-white"
+            } ${
+              isMobileMenuOpen ? "text-accent" : ""
             }`}
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-label={isMobileMenuOpen ? "Fechar menu" : "Abrir menu"}
