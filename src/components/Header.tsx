@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import logo from "@/assets/logo-medeiros.png";
@@ -63,15 +63,15 @@ const Header = () => {
                   {item.label}
                 </button>
               ) : (
-                <a
+                <Link
                   key={item.id}
-                  href={item.id}
+                  to={item.id}
                   className={`text-sm font-medium hover:text-accent transition-colors ${
                     isCartaPage ? "text-white" : isScrolled ? "text-foreground" : "text-white"
                   }`}
                 >
                   {item.label}
-                </a>
+                </Link>
               )
             ))}
             <Button
@@ -111,14 +111,14 @@ const Header = () => {
                     {item.label}
                   </button>
                 ) : (
-                  <a
+                  <Link
                     key={item.id}
-                    href={item.id}
+                    to={item.id}
                     className="text-left text-sm font-medium text-foreground hover:text-accent transition-colors py-2"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     {item.label}
-                  </a>
+                  </Link>
                 )
               ))}
               <Button
