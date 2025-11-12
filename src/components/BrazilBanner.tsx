@@ -15,13 +15,9 @@ const BrazilBanner = () => {
         <div className="absolute top-1/4 right-1/4 w-32 h-32 border-2 border-green-500/20 rounded-full hidden sm:block"></div>
         <div className="absolute bottom-1/3 left-1/3 w-24 h-24 border-2 border-yellow-400/25 rounded-full hidden sm:block"></div>
         
-        {/* Formas Geométricas Angulares */}
-        <div className="absolute top-16 right-12 w-16 h-16 bg-green-600/10 rotate-45 hidden sm:block"></div>
-        <div className="absolute bottom-20 left-16 w-12 h-12 bg-yellow-500/12 -rotate-12 hidden sm:block"></div>
-        
-        {/* Linhas Diagonais Mais Grossas */}
-        <div className="absolute top-8 left-1/3 w-0.5 h-40 bg-gradient-to-b from-transparent via-green-600/25 to-transparent rotate-45 origin-top hidden md:block"></div>
-        <div className="absolute bottom-12 right-1/4 w-0.5 h-36 bg-gradient-to-b from-transparent via-yellow-500/25 to-transparent -rotate-45 origin-bottom hidden md:block"></div>
+        {/* Linhas Diagonais */}
+        <div className="absolute top-8 left-1/3 w-0.5 h-20 bg-gradient-to-b from-transparent via-green-600/25 to-transparent rotate-45 origin-top hidden md:block"></div>
+        <div className="absolute bottom-12 right-1/4 w-0.5 h-24 bg-gradient-to-b from-transparent via-yellow-500/25 to-transparent -rotate-45 origin-bottom hidden md:block"></div>
         
         {/* Pontos Luminosos com Glow Effect */}
         <div className="absolute top-24 left-1/3 w-3 h-3 rounded-full bg-green-500/40 shadow-[0_0_20px_rgba(34,197,94,0.3)] animate-pulse-glow"></div>
