@@ -2,14 +2,14 @@ import { MapPin } from "lucide-react";
 
 const BrazilBanner = () => {
   return (
-    <section className="relative overflow-hidden py-12 sm:py-16 bg-red/5">
+    <section className="relative overflow-hidden py-8 sm:py-10 bg-red/8 border-y-4 border-red/25 shadow-[0_8px_30px_rgb(183,28,28,0.12),0_-8px_30px_rgb(183,28,28,0.12)]">
       
       {/* Elementos Decorativos de Fundo - Design Limpo e Elegante */}
       <div className="absolute inset-0 pointer-events-none">
         {/* Gradiente Suave com Círculos Desfocados */}
-        <div className="absolute -top-24 -left-24 w-96 h-96 bg-red/10 rounded-full blur-3xl animate-float-slow"></div>
-        <div className="absolute -top-32 -right-32 w-[450px] h-[450px] bg-red/15 rounded-full blur-3xl animate-float-slow-reverse"></div>
-        <div className="absolute -bottom-20 left-1/4 w-80 h-80 bg-red/8 rounded-full blur-3xl animate-float-slow"></div>
+        <div className="absolute -top-24 -left-24 w-96 h-96 bg-red/15 rounded-full blur-3xl animate-float-slow"></div>
+        <div className="absolute -top-32 -right-32 w-[450px] h-[450px] bg-red/20 rounded-full blur-3xl animate-float-slow-reverse"></div>
+        <div className="absolute -bottom-20 left-1/4 w-80 h-80 bg-red/12 rounded-full blur-3xl animate-float-slow"></div>
         
         {/* Círculos com Borda - Elementos de Elegância */}
         <div className="absolute top-1/4 right-1/4 w-40 h-40 border border-red/15 rounded-full hidden lg:block"></div>
@@ -22,7 +22,7 @@ const BrazilBanner = () => {
       </div>
       
       <div className="container mx-auto px-4 relative z-10">
-        <div className="max-w-4xl mx-auto bg-white rounded-xl shadow-2xl p-8 sm:p-10 text-center border border-red/10">
+        <div className="max-w-4xl mx-auto text-center">
           
           {/* Tag Premium com Ícone */}
           <div 
