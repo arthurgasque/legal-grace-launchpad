@@ -59,8 +59,8 @@ const Hero = () => {
             data-aos-duration="1000"
             data-aos-delay="200"
           >
-            Compromisso, transparência e{" "}
-            <span className="text-accent">excelência jurídica</span> para defender seus direitos
+            Bem-vindo ao Medeiros Jr. Associados, um escritório jurídico dedicado a oferecer soluções personalizadas, pautadas na{" "}
+            <span className="text-accent">ética, transparência e comprometimento</span> com resultados concretos.
           </h1>
           
           <p 
