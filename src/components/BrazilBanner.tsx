@@ -4,28 +4,21 @@ const BrazilBanner = () => {
   return (
     <section className="relative overflow-hidden py-14 sm:py-16 bg-gradient-to-b from-gray-50/50 to-white">
       
-      {/* Elementos Decorativos de Fundo */}
+      {/* Elementos Decorativos de Fundo - Design Limpo e Elegante */}
       <div className="absolute inset-0 pointer-events-none">
-        {/* Círculos Desfocados - Intensificados */}
-        <div className="absolute top-0 left-0 w-80 h-80 bg-green-500/25 rounded-full blur-3xl animate-float-slow"></div>
-        <div className="absolute top-0 right-0 w-96 h-96 bg-yellow-400/30 rounded-full blur-3xl animate-float-slow-reverse"></div>
-        <div className="absolute bottom-0 right-1/4 w-72 h-72 bg-green-600/20 rounded-full blur-3xl animate-float-slow"></div>
+        {/* Gradiente Suave com Círculos Desfocados */}
+        <div className="absolute -top-24 -left-24 w-96 h-96 bg-green-500/15 rounded-full blur-3xl animate-float-slow"></div>
+        <div className="absolute -top-32 -right-32 w-[450px] h-[450px] bg-yellow-400/18 rounded-full blur-3xl animate-float-slow-reverse"></div>
+        <div className="absolute -bottom-20 left-1/4 w-80 h-80 bg-green-600/12 rounded-full blur-3xl animate-float-slow"></div>
         
-        {/* Círculos com Borda (Ring Effect) */}
-        <div className="absolute top-1/4 right-1/4 w-32 h-32 border-2 border-green-500/20 rounded-full hidden sm:block"></div>
-        <div className="absolute bottom-1/3 left-1/3 w-24 h-24 border-2 border-yellow-400/25 rounded-full hidden sm:block"></div>
+        {/* Círculos com Borda - Elementos de Elegância */}
+        <div className="absolute top-1/4 right-1/4 w-40 h-40 border border-green-500/15 rounded-full hidden lg:block"></div>
+        <div className="absolute bottom-1/3 left-1/4 w-32 h-32 border border-yellow-400/15 rounded-full hidden lg:block"></div>
         
-        {/* Linhas Diagonais */}
-        <div className="absolute top-8 left-1/3 w-0.5 h-20 bg-gradient-to-b from-transparent via-green-600/25 to-transparent rotate-45 origin-top hidden md:block"></div>
-        <div className="absolute bottom-12 right-1/4 w-0.5 h-24 bg-gradient-to-b from-transparent via-yellow-500/25 to-transparent -rotate-45 origin-bottom hidden md:block"></div>
-        
-        {/* Pontos Luminosos com Glow Effect */}
-        <div className="absolute top-24 left-1/3 w-3 h-3 rounded-full bg-green-500/40 shadow-[0_0_20px_rgba(34,197,94,0.3)] animate-pulse-glow"></div>
-        <div className="absolute bottom-32 right-1/4 w-4 h-4 rounded-full bg-yellow-400/45 shadow-[0_0_24px_rgba(250,204,21,0.35)] animate-pulse-glow"></div>
-        <div className="absolute top-12 left-1/4 w-2.5 h-2.5 rounded-full bg-green-500/35 shadow-[0_0_16px_rgba(34,197,94,0.25)]"></div>
-        <div className="absolute top-20 right-1/3 w-2 h-2 rounded-full bg-yellow-400/40 shadow-[0_0_18px_rgba(250,204,21,0.3)]"></div>
-        <div className="absolute bottom-16 left-1/3 w-3 h-3 rounded-full bg-green-600/30 shadow-[0_0_20px_rgba(22,163,74,0.25)] hidden sm:block"></div>
-        <div className="absolute bottom-24 right-1/4 w-2 h-2 rounded-full bg-yellow-500/35 shadow-[0_0_16px_rgba(234,179,8,0.25)] hidden sm:block"></div>
+        {/* Pontos Luminosos Estratégicos */}
+        <div className="absolute top-20 left-[15%] w-2.5 h-2.5 rounded-full bg-green-500/50 shadow-[0_0_15px_rgba(34,197,94,0.4)] animate-pulse-glow"></div>
+        <div className="absolute bottom-28 right-[20%] w-3 h-3 rounded-full bg-yellow-400/50 shadow-[0_0_18px_rgba(250,204,21,0.4)] animate-pulse-glow"></div>
+        <div className="absolute top-32 right-[30%] w-2 h-2 rounded-full bg-green-500/40 shadow-[0_0_12px_rgba(34,197,94,0.3)] hidden md:block"></div>
       </div>
       
       <div className="container mx-auto px-4 relative z-10">
