@@ -2,14 +2,14 @@ import { MapPin } from "lucide-react";
 
 const BrazilBanner = () => {
   return (
-    <section className="relative overflow-hidden py-14 sm:py-16 bg-gradient-to-b from-gray-50/50 to-white">
+    <section className="relative overflow-hidden py-8 sm:py-10 bg-gradient-to-br from-green-50 via-yellow-50/40 to-green-50 border-y-4 border-green-600/20 shadow-[0_8px_30px_rgb(0,0,0,0.08),0_-8px_30px_rgb(0,0,0,0.08)]">
       
       {/* Elementos Decorativos de Fundo - Design Limpo e Elegante */}
       <div className="absolute inset-0 pointer-events-none">
         {/* Gradiente Suave com Círculos Desfocados */}
-        <div className="absolute -top-24 -left-24 w-96 h-96 bg-green-500/15 rounded-full blur-3xl animate-float-slow"></div>
-        <div className="absolute -top-32 -right-32 w-[450px] h-[450px] bg-yellow-400/18 rounded-full blur-3xl animate-float-slow-reverse"></div>
-        <div className="absolute -bottom-20 left-1/4 w-80 h-80 bg-green-600/12 rounded-full blur-3xl animate-float-slow"></div>
+        <div className="absolute -top-24 -left-24 w-96 h-96 bg-green-500/25 rounded-full blur-3xl animate-float-slow"></div>
+        <div className="absolute -top-32 -right-32 w-[450px] h-[450px] bg-yellow-400/30 rounded-full blur-3xl animate-float-slow-reverse"></div>
+        <div className="absolute -bottom-20 left-1/4 w-80 h-80 bg-green-600/20 rounded-full blur-3xl animate-float-slow"></div>
         
         {/* Círculos com Borda - Elementos de Elegância */}
         <div className="absolute top-1/4 right-1/4 w-40 h-40 border border-green-500/15 rounded-full hidden lg:block"></div>
