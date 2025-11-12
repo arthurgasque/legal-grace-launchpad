@@ -9,28 +9,36 @@ import { HelpCircle } from "lucide-react";
 const FAQ = () => {
   const faqs = [
     {
-      question: "Como funciona a primeira consulta?",
-      answer: "A primeira consulta pode ser agendada por WhatsApp, telefone ou e-mail. Durante o atendimento, ouvimos atentamente sua situação, analisamos a viabilidade jurídica e apresentamos as melhores estratégias para seu caso, de forma clara e transparente."
+      question: "Como funciona a contratação no escritório?",
+      answer: "Nosso escritório é composto por uma equipe de advogados e colaboradores altamente qualificados que trabalham de forma conjunta. Ao contratar o Medeiros Jr. Associados, você contará com uma estrutura colaborativa, onde diferentes especialistas poderão atuar em etapas específicas do processo, desde audiências até cálculos e pareceres jurídicos, garantindo máxima eficiência e expertise."
     },
     {
-      question: "Quais são as formas de pagamento?",
-      answer: "Trabalhamos com diversas modalidades de pagamento para facilitar o acesso à justiça: honorários fixos, parcelamento, honorários de êxito (conforme a natureza da causa) e convênios. Entre em contato para conhecer a melhor opção para seu caso."
+      question: "As consultas são cobradas?",
+      answer: "As consultas realizadas no momento inicial do atendimento ou ao longo do andamento processual, em regra, não são cobradas. Os honorários advocatícios geralmente correspondem a um percentual sobre o benefício financeiro obtido com a solução do caso e são acordados de forma transparente, conforme as especificidades de cada situação."
+    },
+    {
+      question: "Qual o canal oficial de comunicação?",
+      answer: "Disponibilizamos canal via WhatsApp através dos contatos diretos da nossa equipe. Por esse canal, você pode agendar consultas, obter atualizações sobre o andamento processual, receber informações sobre audiências e perícias, e tratar de questões financeiras. Atenção: caso receba mensagens de outros números solicitando pagamentos, entre em contato conosco para confirmar."
     },
     {
       question: "Quanto tempo demora um processo?",
-      answer: "O tempo de tramitação varia conforme a complexidade do caso, a área do direito envolvida e a instância judicial. Mantemos nossos clientes sempre informados sobre o andamento processual e trabalhamos para obter a resolução mais rápida e eficaz possível."
+      answer: "O andamento de cada etapa não depende apenas do advogado, mas de diversos fatores externos como volume de processos, atuação de juízes, peritos, servidores e recursos nos tribunais superiores. Quando o processo chega à fase dos tribunais, o tempo pode ser consideravelmente maior devido à sobrecarga do sistema judiciário. Mantemos você sempre informado sobre cada etapa."
     },
     {
-      question: "O escritório atende em outras cidades?",
-      answer: "Sim! Atendemos clientes em todo o Brasil. Além do atendimento presencial em nosso escritório, oferecemos consultas online por videoconferência, garantindo comodidade e agilidade independentemente da sua localização."
+      question: "Como funciona a audiência na Justiça do Trabalho?",
+      answer: "Nas ações trabalhistas, a primeira audiência é obrigatória e sua presença é indispensável - caso não compareça, o processo poderá ser arquivado. Geralmente, após 60 dias da contratação, já é possível conhecer a data da audiência. Assim que obtivermos essa informação, nossa equipe entrará em contato com todos os detalhes sobre data, horário e orientações necessárias."
     },
     {
-      question: "Como faço para acompanhar meu processo?",
-      answer: "Você receberá atualizações periódicas sobre seu processo por e-mail, WhatsApp ou telefone. Além disso, nossa equipe está sempre disponível para esclarecer dúvidas e fornecer informações detalhadas sobre o andamento da sua causa."
+      question: "Posso ter certeza de que vou ganhar a ação?",
+      answer: "O sucesso de um processo depende de inúmeros fatores, como interpretação de provas, testemunhas, documentos apresentados e a postura dos juízes quanto à aplicação das leis. Embora seja possível avaliar tendências jurisprudenciais, não podemos garantir o resultado. Nosso compromisso é trabalhar com ética, técnica e dedicação para buscar sempre as melhores alternativas para o seu caso."
     },
     {
-      question: "Qual a diferença entre advogado e escritório de advocacia?",
-      answer: "Um escritório de advocacia oferece uma estrutura completa com múltiplos profissionais especializados em diferentes áreas, garantindo atendimento mais ágil, expertise diversificada e suporte integral ao cliente. Nossa equipe trabalha de forma integrada para oferecer as melhores soluções jurídicas."
+      question: "Quando ocorre o pagamento do processo?",
+      answer: "Quando a Justiça reconhece o direito do cliente, inicia-se a fase de execução para liquidação do valor. Essa fase pode ser tão ou mais demorada que o processo principal, pois envolve cálculos, impugnações, penhoras e leilões. Se envolver órgãos públicos, seguirá para a fase de precatórios, que exige habilitação no orçamento público. Nosso trabalho é mantê-lo informado durante todo o processo."
+    },
+    {
+      question: "Como me protejo de golpes?",
+      answer: "Caso receba mensagens ou ligações de números desconhecidos solicitando pagamentos antecipados, NÃO realize transferências. Entre diretamente em contato conosco através dos números oficiais da equipe para confirmar qualquer informação. Este é um problema que tem afetado profissionais em todo o país, e é nosso compromisso alertar nossos clientes para evitar fraudes."
     }
   ];
 
