@@ -141,6 +141,10 @@ export default {
           "0%, 100%": { opacity: "0.4", transform: "scale(1)" },
           "50%": { opacity: "1", transform: "scale(1.2)" },
         },
+        "scale-breath": {
+          "0%, 100%": { transform: "scale(1)" },
+          "50%": { transform: "scale(1.05)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -157,6 +161,7 @@ export default {
         "slide-diagonal": "slide-diagonal 15s ease-in-out infinite",
         "slide-diagonal-reverse": "slide-diagonal-reverse 15s ease-in-out infinite",
         "pulse-glow": "pulse-glow 3s ease-in-out infinite",
+        "scale-breath": "scale-breath 3s ease-in-out infinite",
       },
     },
   },
