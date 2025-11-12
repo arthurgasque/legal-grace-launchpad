@@ -28,7 +28,7 @@ const BrazilBanner = () => {
             data-aos-delay="100"
           >
             Atendemos em todo o{" "}
-            <span className="font-bold bg-gradient-to-r from-green-600 via-yellow-500 to-green-600 bg-clip-text text-transparent">
+            <span className="inline-block font-bold bg-gradient-to-r from-green-600 via-yellow-500 to-green-600 bg-clip-text text-transparent hover:from-green-500 hover:via-yellow-400 hover:to-green-500 transition-all duration-500 hover:scale-110 cursor-pointer hover:drop-shadow-[0_0_12px_rgba(0,151,57,0.4)]">
               BRASIL
             </span>
           </h2>
