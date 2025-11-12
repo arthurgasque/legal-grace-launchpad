@@ -1,37 +1,42 @@
-import { Scale, Briefcase, Users, FileText, Gavel, Building } from "lucide-react";
+import { Scale, Briefcase, Users, FileText, Gavel, Building, ShoppingCart, CreditCard, Landmark } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const Services = () => {
   const services = [
     {
+      icon: ShoppingCart,
+      title: "Direito do Consumidor",
+      description: "Defesa dos direitos dos consumidores, assegurando o cumprimento das normas que regulam as relações de consumo. Atuação em casos de práticas abusivas, contratos, cobranças indevidas e vícios de produtos ou serviços.",
+    },
+    {
+      icon: CreditCard,
+      title: "Direito Bancário",
+      description: "Consultoria e representação em questões relacionadas a instituições financeiras, como revisão de contratos, cobranças excessivas, negociações e demandas judiciais ou extrajudiciais.",
+    },
+    {
       icon: Briefcase,
-      title: "Direito Trabalhista",
-      description: "Defesa de direitos trabalhistas, rescisões, acordos e processos judiciais com estratégia e agilidade.",
+      title: "Direito do Trabalho – Reclamante",
+      description: "Foco na defesa de trabalhadores. Atuamos em demandas relacionadas a verbas rescisórias, assédio moral, condições de trabalho, acidentes laborais e outros direitos trabalhistas.",
+    },
+    {
+      icon: Building,
+      title: "Direito do Trabalho – Reclamado",
+      description: "Defesa de empresas, empregadores e organizações em demandas trabalhistas, com uma atuação estratégica e preventiva, visando a regularidade e sustentabilidade nas relações de trabalho.",
+    },
+    {
+      icon: Landmark,
+      title: "Direito Tributário",
+      description: "Assessoria em questões tributárias para empresas e pessoas físicas, com foco na redução de passivos tributários, planejamento fiscal e contencioso tributário.",
     },
     {
       icon: Scale,
       title: "Direito Civil",
-      description: "Assessoria completa em contratos, indenizações, responsabilidade civil e resolução de litígios.",
+      description: "Atuação em demandas contratuais, responsabilidade civil, direito das obrigações, locações, cobranças e demais conflitos que envolvam relações interpessoais.",
     },
     {
       icon: Users,
-      title: "Direito de Família",
-      description: "Divórcios, partilhas, pensão alimentícia, guarda de menores e inventários com sensibilidade e ética.",
-    },
-    {
-      icon: FileText,
-      title: "Contratos e Consultoria",
-      description: "Elaboração, revisão e consultoria jurídica preventiva em contratos e operações empresariais.",
-    },
-    {
-      icon: Gavel,
-      title: "Ações de Indenização",
-      description: "Reparação de danos morais e materiais, defesa do consumidor e responsabilidade civil.",
-    },
-    {
-      icon: Building,
-      title: "Direito Empresarial",
-      description: "Assessoria jurídica completa para empresas, societário, recuperação judicial e compliance.",
+      title: "Sucessões",
+      description: "Consultoria e atuação em inventários, testamentos, planejamento sucessório e partilha de bens, visando à preservação de patrimônio e segurança jurídica nas relações familiares.",
     },
   ];
 
@@ -59,8 +64,7 @@ const Services = () => {
             data-aos="fade-up"
             data-aos-delay="100"
           >
-            Atuação especializada e estratégica nas principais áreas do Direito, 
-            sempre com foco em resultados efetivos para nossos clientes
+            Atendemos com expertise nas seguintes áreas do Direito
           </p>
         </div>
 
