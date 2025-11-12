@@ -2,7 +2,7 @@ import { MapPin } from "lucide-react";
 
 const BrazilBanner = () => {
   return (
-    <section className="relative overflow-hidden py-8 sm:py-10 bg-gradient-to-br from-green-50 via-yellow-50/40 to-green-50 border-y-4 border-green-600/20 shadow-[0_8px_30px_rgb(0,0,0,0.08),0_-8px_30px_rgb(0,0,0,0.08)]">
+    <section className="relative overflow-hidden py-12 sm:py-16 bg-gradient-to-br from-green-50 via-yellow-50/40 to-green-50">
       
       {/* Elementos Decorativos de Fundo - Design Limpo e Elegante */}
       <div className="absolute inset-0 pointer-events-none">
@@ -22,7 +22,7 @@ const BrazilBanner = () => {
       </div>
       
       <div className="container mx-auto px-4 relative z-10">
-        <div className="max-w-4xl mx-auto text-center">
+        <div className="max-w-4xl mx-auto bg-white rounded-xl shadow-2xl p-8 sm:p-10 text-center border border-green-100/50">
           
           {/* Tag Premium com Ícone */}
           <div 
