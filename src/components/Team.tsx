@@ -18,21 +18,21 @@ const Team = () => {
       specialty: "Direito do Consumidor, Direito Bancário e Direito do Trabalho",
       description: "Bacharel em direito pela Universidade Federal do Rio Grande – FURG no ano de 2013. Com atuação voltada para o Direito do Consumidor, Direito Bancário e Direito do Trabalho, especialmente na defesa dos direitos dos trabalhadores reclamantes, busca oferecer uma assessoria jurídica personalizada, pautada na ética, transparência e na efetiva solução dos conflitos. Seu trabalho é guiado pelo compromisso em garantir justiça, segurança jurídica e resultados concretos para cada cliente.",
       email: "XXXXXXXX",
-      whatsapp: "XXXXXXXX",
+      whatsapp: "5553984040489",
     },
     {
       name: "Hermes Medeiros Jr.",
       specialty: "Direito Tributário, Direito Civil e Direito do Trabalho",
       description: "Bacharel em direito pela Universidade Federal do Rio Grande – FURG no ano de 2013. Com atuação voltada para o Direito Tributário, Direito Civil e Direito do Trabalho, com foco na defesa dos interesses de empresas e empregadores, busca oferecer soluções jurídicas estratégicas, preventivas e eficientes. Seu trabalho é pautado na responsabilidade, técnica apurada e compromisso com a segurança jurídica e o equilíbrio nas relações empresariais.",
       email: "XXXXXXXX",
-      whatsapp: "XXXXXXXX",
+      whatsapp: "5553984060833",
     },
     {
       name: "Djanine Lopes Pires Medeiros",
       specialty: "Direito do Trabalho, Direito Previdenciário e Planejamento Sucessório",
       description: "Bacharel em direito pela Universidade Federal do Rio Grande – FURG no ano de 2015 e especialização em Direito do Trabalho e Direito Previdenciário pela Anhanguera Educacional, possui ampla experiência em demandas contenciosas e assessoramento nas áreas trabalhista, previdenciária e sucessória. Destaca-se como especialista em inventários e planejamento sucessório, atuando de forma estratégica e de acordo com os objetivos individuais dos clientes. Seu compromisso aliado à experiência prática refletem a ética, a qualidade e a justiça em seu exercício profissional.",
       email: "XXXXXXXX",
-      whatsapp: "XXXXXXXX",
+      whatsapp: "5553984324397",
     },
   ];
 
