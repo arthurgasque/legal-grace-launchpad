@@ -68,7 +68,7 @@ const Hero = () => {
             data-aos-duration="1000"
             data-aos-delay="400"
           >
-            Bem-vindo ao Medeiros Jr. Associados, um escritório jurídico dedicado a oferecer soluções personalizadas, pautadas na ética, transparência e comprometimento com resultados concretos.
+            Um escritório jurídico dedicado a oferecer soluções personalizadas, pautadas na ética, transparência e comprometimento com resultados concretos.
           </p>
 
           <div 
