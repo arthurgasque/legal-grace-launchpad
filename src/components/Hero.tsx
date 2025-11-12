@@ -59,8 +59,7 @@ const Hero = () => {
             data-aos-duration="1000"
             data-aos-delay="200"
           >
-            Comprometimento, transparência e{" "}
-            <span className="text-accent">excelência jurídica</span> para defender seus direitos.
+            Bem-vindo ao Medeiros Jr. Associados
           </h1>
           
           <p 
