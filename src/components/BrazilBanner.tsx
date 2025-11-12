@@ -6,20 +6,28 @@ const BrazilBanner = () => {
       
       {/* Elementos Decorativos de Fundo */}
       <div className="absolute inset-0 pointer-events-none">
-        {/* Círculos Desfocados */}
-        <div className="absolute top-0 left-0 w-64 h-64 bg-green-500/5 rounded-full blur-3xl"></div>
-        <div className="absolute top-0 right-0 w-72 h-72 bg-yellow-400/8 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-0 right-1/4 w-56 h-56 bg-green-600/6 rounded-full blur-3xl"></div>
+        {/* Círculos Desfocados - Intensificados */}
+        <div className="absolute top-0 left-0 w-80 h-80 bg-green-500/15 rounded-full blur-3xl animate-float-slow"></div>
+        <div className="absolute top-0 right-0 w-96 h-96 bg-yellow-400/20 rounded-full blur-3xl animate-float-slow-reverse"></div>
+        <div className="absolute bottom-0 right-1/4 w-72 h-72 bg-green-600/12 rounded-full blur-3xl animate-float-slow"></div>
         
-        {/* Formas Orgânicas SVG */}
-        <svg className="absolute left-0 top-1/4 w-32 h-auto opacity-[0.03] hidden sm:block" viewBox="0 0 200 200">
+        {/* Círculos com Borda (Ring Effect) */}
+        <div className="absolute top-1/4 right-1/4 w-32 h-32 border-2 border-green-500/20 rounded-full hidden sm:block"></div>
+        <div className="absolute bottom-1/3 left-1/3 w-24 h-24 border-2 border-yellow-400/25 rounded-full hidden sm:block"></div>
+        
+        {/* Formas Geométricas Angulares */}
+        <div className="absolute top-16 right-12 w-16 h-16 bg-green-600/10 rotate-45 hidden sm:block"></div>
+        <div className="absolute bottom-20 left-16 w-12 h-12 bg-yellow-500/12 -rotate-12 hidden sm:block"></div>
+        
+        {/* Formas Orgânicas SVG - Intensificadas */}
+        <svg className="absolute left-0 top-1/4 w-48 h-auto opacity-[0.08] hidden sm:block" viewBox="0 0 200 200">
           <path 
             d="M0,100 Q50,50 100,100 T200,100 L200,200 L0,200 Z" 
             fill="currentColor" 
             className="text-green-600"
           />
         </svg>
-        <svg className="absolute right-0 top-1/3 w-40 h-auto opacity-[0.04] hidden sm:block" viewBox="0 0 200 200">
+        <svg className="absolute right-0 top-1/3 w-56 h-auto opacity-[0.1] hidden sm:block" viewBox="0 0 200 200">
           <path 
             d="M200,100 Q150,150 100,100 T0,100 L0,200 L200,200 Z" 
             fill="currentColor" 
@@ -27,15 +35,17 @@ const BrazilBanner = () => {
           />
         </svg>
         
-        {/* Linhas Diagonais Sutis */}
-        <div className="absolute top-0 left-1/4 w-px h-32 bg-gradient-to-b from-transparent via-green-600/10 to-transparent rotate-45 origin-top hidden md:block"></div>
-        <div className="absolute bottom-0 right-1/3 w-px h-24 bg-gradient-to-b from-transparent via-yellow-500/10 to-transparent -rotate-45 origin-bottom hidden md:block"></div>
+        {/* Linhas Diagonais Mais Grossas */}
+        <div className="absolute top-8 left-1/3 w-0.5 h-40 bg-gradient-to-b from-transparent via-green-600/25 to-transparent rotate-45 origin-top hidden md:block"></div>
+        <div className="absolute bottom-12 right-1/4 w-0.5 h-36 bg-gradient-to-b from-transparent via-yellow-500/25 to-transparent -rotate-45 origin-bottom hidden md:block"></div>
         
-        {/* Pontos Luminosos Decorativos */}
-        <div className="absolute top-12 left-1/4 w-2 h-2 rounded-full bg-green-500/20"></div>
-        <div className="absolute top-20 right-1/3 w-1.5 h-1.5 rounded-full bg-yellow-400/25"></div>
-        <div className="absolute bottom-16 left-1/3 w-2.5 h-2.5 rounded-full bg-green-600/15 hidden sm:block"></div>
-        <div className="absolute bottom-24 right-1/4 w-1 h-1 rounded-full bg-yellow-500/20 hidden sm:block"></div>
+        {/* Pontos Luminosos com Glow Effect */}
+        <div className="absolute top-24 left-1/3 w-3 h-3 rounded-full bg-green-500/40 shadow-[0_0_20px_rgba(34,197,94,0.3)] animate-pulse-glow"></div>
+        <div className="absolute bottom-32 right-1/4 w-4 h-4 rounded-full bg-yellow-400/45 shadow-[0_0_24px_rgba(250,204,21,0.35)] animate-pulse-glow"></div>
+        <div className="absolute top-12 left-1/4 w-2.5 h-2.5 rounded-full bg-green-500/35 shadow-[0_0_16px_rgba(34,197,94,0.25)]"></div>
+        <div className="absolute top-20 right-1/3 w-2 h-2 rounded-full bg-yellow-400/40 shadow-[0_0_18px_rgba(250,204,21,0.3)]"></div>
+        <div className="absolute bottom-16 left-1/3 w-3 h-3 rounded-full bg-green-600/30 shadow-[0_0_20px_rgba(22,163,74,0.25)] hidden sm:block"></div>
+        <div className="absolute bottom-24 right-1/4 w-2 h-2 rounded-full bg-yellow-500/35 shadow-[0_0_16px_rgba(234,179,8,0.25)] hidden sm:block"></div>
       </div>
       
       <div className="container mx-auto px-4 relative z-10">
