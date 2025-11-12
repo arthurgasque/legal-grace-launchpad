@@ -55,47 +55,45 @@ const CartaAoCliente = () => {
               
               {/* Introduction */}
               <div className="mb-12 sm:mb-16">
-                <p className="text-lg leading-relaxed text-foreground mb-6">
-                  Prezado Cliente,
-                </p>
-                <p className="text-lg leading-relaxed text-muted-foreground">
-                  É com grande satisfação que recebemos sua confiança para representá-lo juridicamente. 
-                  Este documento tem como objetivo esclarecer de forma transparente como funciona nossa 
-                  relação profissional, nossos métodos de trabalho e o que você pode esperar de nossa atuação.
-                </p>
+              <p className="text-lg leading-relaxed text-foreground mb-6">
+                Prezado Cliente,
+              </p>
+              <p className="text-lg leading-relaxed text-muted-foreground">
+                É essencial que você esteja bem informado sobre o funcionamento do nosso escritório e dos processos judiciais. Para isso, gostaríamos de esclarecer alguns pontos importantes sobre como trabalhamos, os tempos de tramitação e os desafios enfrentados no sistema judiciário brasileiro.
+              </p>
               </div>
 
               {/* Cards Grid */}
               <div className="grid md:grid-cols-2 gap-6 mb-12 sm:mb-16">
                 <div className="bg-gray-light p-6 rounded-lg border-l-4 border-accent">
-                  <FileText className="h-8 w-8 text-accent mb-4" />
-                  <h3 className="text-xl font-bold text-primary mb-2">Contratação</h3>
+                  <Users className="h-8 w-8 text-accent mb-4" />
+                  <h3 className="text-xl font-bold text-primary mb-2">Equipe Integrada</h3>
                   <p className="text-muted-foreground">
-                    Após análise inicial do caso, formalizamos a contratação através de contrato claro e objetivo
+                    Estrutura colaborativa com advogados e especialistas atuando em diferentes etapas
                   </p>
                 </div>
 
                 <div className="bg-gray-light p-6 rounded-lg border-l-4 border-accent">
-                  <Users className="h-8 w-8 text-accent mb-4" />
-                  <h3 className="text-xl font-bold text-primary mb-2">Equipe Dedicada</h3>
+                  <FileText className="h-8 w-8 text-accent mb-4" />
+                  <h3 className="text-xl font-bold text-primary mb-2">Honorários Transparentes</h3>
                   <p className="text-muted-foreground">
-                    Profissionais especializados acompanham seu caso do início ao fim
+                    Percentual sobre o benefício obtido, acordado de forma clara
                   </p>
                 </div>
 
                 <div className="bg-gray-light p-6 rounded-lg border-l-4 border-accent">
                   <Clock className="h-8 w-8 text-accent mb-4" />
-                  <h3 className="text-xl font-bold text-primary mb-2">Prazos Realistas</h3>
+                  <h3 className="text-xl font-bold text-primary mb-2">Comunicação Direta</h3>
                   <p className="text-muted-foreground">
-                    Informamos com honestidade sobre prazos e tramitação processual
+                    Atendimento via WhatsApp para consultas, audiências e atualizações
                   </p>
                 </div>
 
                 <div className="bg-gray-light p-6 rounded-lg border-l-4 border-accent">
                   <Shield className="h-8 w-8 text-accent mb-4" />
-                  <h3 className="text-xl font-bold text-primary mb-2">Ética e Sigilo</h3>
+                  <h3 className="text-xl font-bold text-primary mb-2">Segurança e Ética</h3>
                   <p className="text-muted-foreground">
-                    Sigilo absoluto e conduta ética em todas as nossas ações
+                    Compromisso com a Justiça e defesa dos direitos dos clientes
                   </p>
                 </div>
               </div>
@@ -104,96 +102,115 @@ const CartaAoCliente = () => {
               <div className="space-y-10 sm:space-y-12">
                 <div>
                   <h2 className="text-2xl sm:text-3xl font-playfair font-bold text-primary mb-4">
-                    Como Trabalhamos
+                    Nossa Equipe e Forma de Contratação
                   </h2>
                   <p className="text-base sm:text-lg leading-relaxed text-muted-foreground mb-4">
-                    Nosso escritório atua de forma estratégica e personalizada. Cada caso é único e 
-                    merece atenção individualizada. Realizamos uma análise minuciosa da sua situação, 
-                    estudamos a jurisprudência aplicável e traçamos a melhor estratégia jurídica para 
-                    alcançar o resultado desejado.
+                    Nosso escritório é composto por uma equipe de advogados e colaboradores altamente qualificados, que trabalham de forma conjunta para garantir a melhor experiência e atendimento aos nossos clientes.
                   </p>
                   <p className="text-base sm:text-lg leading-relaxed text-muted-foreground">
-                    Mantemos comunicação constante com nossos clientes, fornecendo atualizações periódicas 
-                    sobre o andamento dos processos e estando sempre disponíveis para esclarecer dúvidas 
-                    e prestar orientações.
+                    Ao contratar os serviços do Medeiros Jr. Associados, você estará confiando em uma estrutura colaborativa. Isso significa que, embora um advogado possa ser seu primeiro ponto de contato, outros integrantes especializados da equipe poderão atuar em diferentes etapas do processo, desde audiências até a realização de cálculos e pareceres jurídicos. Nosso modelo de trabalho integrado assegura que cada caso seja tratado com o máximo de eficiência e expertise.
                   </p>
                 </div>
 
                 <div>
                   <h2 className="text-2xl sm:text-3xl font-playfair font-bold text-primary mb-4">
-                    Funcionamento Interno
+                    Honorários e Consultas
                   </h2>
                   <p className="text-base sm:text-lg leading-relaxed text-muted-foreground mb-4">
-                    Nossa equipe é composta por advogados especializados em diferentes áreas do Direito, 
-                    permitindo uma atuação multidisciplinar e completa. Utilizamos sistemas modernos de 
-                    gestão processual que garantem controle rigoroso de prazos e acompanhamento eficiente 
-                    de todas as demandas.
+                    As consultas realizadas no momento inicial do atendimento ou ao longo do andamento processual, em regra, não são cobradas.
                   </p>
                   <p className="text-base sm:text-lg leading-relaxed text-muted-foreground">
-                    Todos os membros da equipe trabalham de forma integrada, compartilhando conhecimentos 
-                    e experiências para oferecer a melhor solução jurídica para cada cliente.
+                    Os honorários advocatícios geralmente correspondem a um percentual sobre o benefício financeiro obtido com a solução do caso e são acordados de forma transparente, conforme as especificidades de cada situação.
                   </p>
                 </div>
 
                 <div>
                   <h2 className="text-2xl sm:text-3xl font-playfair font-bold text-primary mb-4">
-                    Expectativas e Transparência
+                    Nosso Canal Oficial de Comunicação
                   </h2>
                   <p className="text-base sm:text-lg leading-relaxed text-muted-foreground mb-4">
-                    É fundamental que haja clareza sobre o que esperar do processo judicial. Processos 
-                    judiciais demandam tempo e podem passar por diferentes instâncias. Nosso compromisso 
-                    é trabalhar incansavelmente pela sua causa, mas sempre com transparência sobre os 
-                    desafios e possibilidades reais de cada situação.
+                    Para facilitar o atendimento, disponibilizamos canal via WhatsApp através dos contatos diretos da nossa equipe.
                   </p>
-                  <p className="text-base sm:text-lg leading-relaxed text-muted-foreground">
-                    Não fazemos promessas de resultados impossíveis. Nossa atuação é baseada em análise 
-                    técnica, experiência prática e aplicação ética das normas jurídicas.
+                  <p className="text-base sm:text-lg leading-relaxed text-muted-foreground mb-4">
+                    Por esse canal, você pode:
+                  </p>
+                  <ul className="list-disc list-inside space-y-2 text-base sm:text-lg leading-relaxed text-muted-foreground mb-4 ml-4">
+                    <li>Agendar consultas e atendimentos;</li>
+                    <li>Obter atualizações sobre o andamento processual;</li>
+                    <li>Receber informações sobre audiências e perícias;</li>
+                    <li>Tratar de questões financeiras com nossa equipe.</li>
+                  </ul>
+                </div>
+
+                <div className="bg-red-50 border-l-4 border-red-500 p-6 sm:p-8 rounded-r-lg">
+                  <h2 className="text-2xl sm:text-3xl font-playfair font-bold text-red-700 mb-4">
+                    Cuidado com Golpes
+                  </h2>
+                  <p className="text-base sm:text-lg leading-relaxed text-red-900">
+                    Caso receba mensagens ou ligações de outros números solicitando pagamentos antecipados, não realize transferências e entre diretamente em contato conosco para confirmar qualquer informação. Este é um problema que tem afetado profissionais em todo o país, e é nosso compromisso alertar nossos clientes para evitar qualquer situação de fraude.
                   </p>
                 </div>
 
                 <div>
                   <h2 className="text-2xl sm:text-3xl font-playfair font-bold text-primary mb-4">
-                    Prazo dos Processos
+                    Audiência na Justiça do Trabalho
                   </h2>
                   <p className="text-base sm:text-lg leading-relaxed text-muted-foreground mb-4">
-                    A duração de um processo depende de diversos fatores: complexidade da causa, volume 
-                    de processos no tribunal, possibilidade de recursos e particularidades de cada caso. 
-                    Processos simples podem ser resolvidos em meses, enquanto casos mais complexos podem 
-                    levar anos.
+                    Nas ações trabalhistas, a primeira audiência é obrigatória, e sua presença é indispensável. Caso o cliente não compareça, o processo poderá ser arquivado.
                   </p>
                   <p className="text-base sm:text-lg leading-relaxed text-muted-foreground">
-                    Acompanhamos cada etapa com atenção e fazemos tudo ao nosso alcance para obter a 
-                    resolução mais rápida possível, sempre priorizando a qualidade e eficácia da defesa.
+                    Geralmente, após 60 dias da contratação, já é possível conhecer a data da audiência. Assim que obtivermos essa informação, nossa equipe entrará em contato para fornecer os detalhes necessários sobre data, horário e orientações pertinentes.
                   </p>
                 </div>
 
                 <div>
                   <h2 className="text-2xl sm:text-3xl font-playfair font-bold text-primary mb-4">
-                    Comunicação e Atendimento
+                    O Tempo dos Processos
                   </h2>
                   <p className="text-base sm:text-lg leading-relaxed text-muted-foreground mb-4">
-                    Valorizamos a relação de confiança com nossos clientes. Estamos disponíveis para 
-                    atendimento presencial, por telefone, e-mail ou WhatsApp. Respondemos dúvidas, 
-                    fornecemos cópias de documentos e mantemos você sempre informado sobre qualquer 
-                    movimentação em seu processo.
+                    Sabemos o quanto pode ser desafiador lidar com a demora nos processos judiciais. Entretanto, é importante destacar que o andamento de cada etapa não depende apenas do advogado, mas também de diversos fatores externos, como o volume de processos, a atuação de juízes, peritos, servidores, representantes do Ministério Público e recursos nos tribunais superiores.
                   </p>
                   <p className="text-base sm:text-lg leading-relaxed text-muted-foreground">
-                    Seu feedback é importante para nós. Estamos sempre abertos ao diálogo e comprometidos 
-                    em oferecer um serviço de excelência.
+                    Além disso, quando o processo chega à fase dos tribunais, o tempo pode ser consideravelmente maior devido à sobrecarga enfrentada pelo sistema judiciário. Infelizmente, essas circunstâncias muitas vezes estão além do alcance da advocacia.
+                  </p>
+                </div>
+
+                <div>
+                  <h2 className="text-2xl sm:text-3xl font-playfair font-bold text-primary mb-4">
+                    A Possibilidade de Êxito
+                  </h2>
+                  <p className="text-base sm:text-lg leading-relaxed text-muted-foreground mb-4">
+                    Uma das maiores preocupações dos nossos clientes é saber se irão vencer a ação. No entanto, ressaltamos que o sucesso de um processo depende de inúmeros fatores, como interpretação de provas, testemunhas, documentos apresentados e a própria postura dos juízes quanto à aplicação das leis.
+                  </p>
+                  <p className="text-base sm:text-lg leading-relaxed text-muted-foreground">
+                    Embora seja possível avaliar tendências jurisprudenciais, não podemos garantir o resultado. Nosso compromisso é trabalhar com ética, técnica e dedicação para buscar sempre as melhores alternativas para o seu caso.
+                  </p>
+                </div>
+
+                <div>
+                  <h2 className="text-2xl sm:text-3xl font-playfair font-bold text-primary mb-4">
+                    O Pagamento do Processo: Quando Ocorre?
+                  </h2>
+                  <p className="text-base sm:text-lg leading-relaxed text-muted-foreground mb-4">
+                    Quando o processo chega ao fim e a Justiça reconhece o direito do cliente, inicia-se a fase de execução, onde o valor reconhecido é liquidado e transformado em um montante exato a ser pago.
+                  </p>
+                  <p className="text-base sm:text-lg leading-relaxed text-muted-foreground mb-4">
+                    Essa fase, contudo, pode ser tão ou mais demorada que o processo principal, pois envolve etapas burocráticas como cálculos, impugnações, penhoras, leilões e outros trâmites legais. Nosso trabalho é manter você informado e conduzido com segurança durante todo o processo.
+                  </p>
+                  <p className="text-base sm:text-lg leading-relaxed text-muted-foreground">
+                    Se o processo envolver órgãos públicos, ele seguirá para a fase de precatórios, que exige habilitação no orçamento da administração pública. Ainda que regularmente prevista em lei, o pagamento pelos entes públicos nem sempre ocorre dentro do prazo estipulado.
                   </p>
                 </div>
 
                 <div className="bg-accent/5 border-l-4 border-accent p-6 sm:p-8 rounded-r-lg">
                   <h2 className="text-2xl sm:text-3xl font-playfair font-bold text-primary mb-4">
-                    Nosso Compromisso
+                    Confie em Nosso Trabalho
                   </h2>
                   <p className="text-base sm:text-lg leading-relaxed text-muted-foreground mb-4">
-                    Nosso compromisso com você vai além da advocacia técnica. Buscamos construir uma 
-                    relação de confiança, respeito e transparência. Cada cliente é tratado com a atenção 
-                    e dedicação que merece, independentemente da complexidade ou valor da causa.
+                    Cada processo é único, e comparações com casos de terceiros podem gerar expectativas irreais. Nossa equipe trabalha com seriedade, transparência e ética profissional para buscar os melhores resultados possíveis. O escritório Medeiros Jr. Associados construiu sua trajetória com base no compromisso inabalável com a Justiça e a defesa dos direitos dos nossos clientes.
                   </p>
                   <p className="text-base sm:text-lg leading-relaxed text-primary font-semibold">
-                    Conte conosco para defender seus direitos com ética, competência e determinação.
+                    Conte conosco para transformar desafios jurídicos em soluções sólidas e eficazes!
                   </p>
                 </div>
               </div>
