@@ -1,8 +1,17 @@
+import { useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/ui/dialog";
 import { Mail, MessageCircle, User } from "lucide-react";
 
 const Team = () => {
+  const [selectedMember, setSelectedMember] = useState<number | null>(null);
+
   const team = [
     {
       name: "Alex Sander Oliveira Farias",
@@ -39,51 +48,92 @@ const Team = () => {
           </p>
         </div>
 
-        <div className="grid gap-8 max-w-5xl mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {team.map((member, index) => (
             <Card
               key={index}
-              className="group overflow-hidden hover:shadow-lg transition-all duration-300 animate-fade-in bg-white border-2 hover:border-accent/50"
+              className="group overflow-hidden hover:shadow-xl transition-all duration-300 hover:scale-105 animate-fade-in bg-white border-2 hover:border-accent/50 cursor-pointer"
               style={{ animationDelay: `${index * 150}ms` }}
+              onClick={() => setSelectedMember(index)}
             >
               <CardContent className="p-0">
-                <div className="grid md:grid-cols-[300px_1fr] gap-0">
-                  {/* Image placeholder */}
-                  <div className="relative h-80 md:h-full bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center overflow-hidden group-hover:opacity-90 transition-opacity">
-                    <User className="h-32 w-32 text-gray-400" />
-                    <div className="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent"></div>
-                  </div>
+                {/* Image placeholder */}
+                <div className="relative h-80 bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center overflow-hidden group-hover:opacity-90 transition-opacity">
+                  <User className="h-32 w-32 text-gray-400" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent"></div>
+                </div>
 
-                  {/* Info */}
-                  <div className="p-6 md:p-8 flex flex-col justify-between">
-                    <div>
-                      <h3 className="text-2xl font-semibold text-primary mb-2 group-hover:text-accent transition-colors">
-                        {member.name}
-                      </h3>
-                      <p className="text-sm text-accent font-semibold mb-4 uppercase tracking-wide">
-                        {member.specialty}
-                      </p>
-                      <p className="text-sm text-muted-foreground leading-relaxed mb-6">
-                        {member.description}
+                {/* Info */}
+                <div className="p-6 text-center">
+                  <h3 className="text-xl font-semibold text-primary mb-2 group-hover:text-accent transition-colors">
+                    {member.name}
+                  </h3>
+                  <p className="text-sm text-accent font-medium mb-4 line-clamp-2">
+                    {member.specialty}
+                  </p>
+                  <Button
+                    variant="outline"
+                    className="w-full border-accent/50 hover:bg-accent hover:text-white"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      setSelectedMember(index);
+                    }}
+                  >
+                    Ver Perfil Completo
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+
+        {/* Modal */}
+        <Dialog open={selectedMember !== null} onOpenChange={() => setSelectedMember(null)}>
+          <DialogContent className="max-w-2xl max-h-[90vh] overflow-y-auto">
+            {selectedMember !== null && (
+              <>
+                <DialogHeader>
+                  <div className="flex items-center gap-4 mb-4">
+                    <div className="w-20 h-20 rounded-full bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center flex-shrink-0">
+                      <User className="h-10 w-10 text-gray-400" />
+                    </div>
+                    <div className="text-left flex-1">
+                      <DialogTitle className="text-2xl font-bold text-primary mb-1">
+                        {team[selectedMember].name}
+                      </DialogTitle>
+                      <p className="text-sm text-accent font-semibold uppercase tracking-wide">
+                        {team[selectedMember].specialty}
                       </p>
                     </div>
+                  </div>
+                </DialogHeader>
 
+                <div className="space-y-6">
+                  {/* Description */}
+                  <div>
+                    <h4 className="font-semibold text-primary mb-3 text-lg">Sobre</h4>
+                    <p className="text-muted-foreground leading-relaxed text-justify">
+                      {team[selectedMember].description}
+                    </p>
+                  </div>
+
+                  {/* Contact Buttons */}
+                  <div>
+                    <h4 className="font-semibold text-primary mb-3 text-lg">Entrar em Contato</h4>
                     <div className="flex gap-3">
                       <Button
                         variant="outline"
-                        size="sm"
                         className="flex-1 border-accent/50 hover:bg-accent hover:text-white"
-                        onClick={() => window.open(`mailto:${member.email}`)}
+                        onClick={() => window.open(`mailto:${team[selectedMember].email}`)}
                       >
                         <Mail className="h-4 w-4 mr-2" />
                         Email
                       </Button>
                       <Button
-                        size="sm"
                         className="flex-1 bg-gradient-red hover:opacity-90"
                         onClick={() =>
                           window.open(
-                            `https://wa.me/${member.whatsapp}?text=Olá, gostaria de falar com ${member.name}`,
+                            `https://wa.me/${team[selectedMember].whatsapp}?text=Olá, gostaria de falar com ${team[selectedMember].name}`,
                             "_blank"
                           )
                         }
@@ -94,10 +144,10 @@ const Team = () => {
                     </div>
                   </div>
                 </div>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
+              </>
+            )}
+          </DialogContent>
+        </Dialog>
       </div>
     </section>
   );
