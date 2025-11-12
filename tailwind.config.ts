@@ -113,6 +113,34 @@ export default {
           "0%, 100%": { transform: "translateY(0px)" },
           "50%": { transform: "translateY(-10px)" },
         },
+        "float-slow": {
+          "0%, 100%": { transform: "translateY(0px) translateX(0px)" },
+          "50%": { transform: "translateY(-20px) translateX(10px)" },
+        },
+        "float-slow-reverse": {
+          "0%, 100%": { transform: "translateY(0px) translateX(0px)" },
+          "50%": { transform: "translateY(20px) translateX(-10px)" },
+        },
+        "wave": {
+          "0%, 100%": { transform: "translateX(0) scaleY(1)" },
+          "50%": { transform: "translateX(-20px) scaleY(1.1)" },
+        },
+        "wave-reverse": {
+          "0%, 100%": { transform: "translateX(0) scaleY(1)" },
+          "50%": { transform: "translateX(20px) scaleY(1.1)" },
+        },
+        "slide-diagonal": {
+          "0%, 100%": { transform: "translateX(0) translateY(0) rotate(12deg)" },
+          "50%": { transform: "translateX(-30px) translateY(30px) rotate(12deg)" },
+        },
+        "slide-diagonal-reverse": {
+          "0%, 100%": { transform: "translateX(0) translateY(0) rotate(-12deg)" },
+          "50%": { transform: "translateX(30px) translateY(-30px) rotate(-12deg)" },
+        },
+        "pulse-glow": {
+          "0%, 100%": { opacity: "0.4", transform: "scale(1)" },
+          "50%": { opacity: "1", transform: "scale(1.2)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -122,6 +150,13 @@ export default {
         "slide-in-right": "slide-in-right 0.6s ease-out",
         "scale-in": "scale-in 0.5s ease-out",
         "float": "float 3s ease-in-out infinite",
+        "float-slow": "float-slow 8s ease-in-out infinite",
+        "float-slow-reverse": "float-slow-reverse 8s ease-in-out infinite",
+        "wave": "wave 12s ease-in-out infinite",
+        "wave-reverse": "wave-reverse 12s ease-in-out infinite",
+        "slide-diagonal": "slide-diagonal 15s ease-in-out infinite",
+        "slide-diagonal-reverse": "slide-diagonal-reverse 15s ease-in-out infinite",
+        "pulse-glow": "pulse-glow 3s ease-in-out infinite",
       },
     },
   },
