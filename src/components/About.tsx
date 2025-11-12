@@ -25,16 +25,10 @@ const About = () => {
     }
   ];
 
-  const stats = [
-    { value: "500+", label: "Clientes Atendidos" },
-    { value: "95%", label: "Taxa de Sucesso" },
-    { value: "24h", label: "Tempo de Resposta" },
-  ];
-
   return (
     <section id="sobre" className="py-16 sm:py-20 lg:py-24 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center mb-16">
+        <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
           {/* Text Content */}
           <div className="order-2 lg:order-1" data-aos="fade-right" data-aos-duration="1000">
             <div className="inline-flex items-center gap-2 bg-accent/10 rounded-full px-4 py-2 mb-4">
@@ -90,25 +84,6 @@ const About = () => {
               />
             </div>
           </div>
-        </div>
-
-        {/* Stats Section */}
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
-          {stats.map((stat, index) => (
-            <div
-              key={index}
-              className="text-center p-6 bg-gray-light rounded-lg hover:shadow-md transition-shadow"
-              data-aos="zoom-in"
-              data-aos-delay={index * 100}
-            >
-              <div className="text-3xl sm:text-4xl lg:text-5xl font-bold text-accent mb-2">
-                {stat.value}
-              </div>
-              <div className="text-sm sm:text-base text-muted-foreground font-medium">
-                {stat.label}
-              </div>
-            </div>
-          ))}
         </div>
       </div>
     </section>
