@@ -59,7 +59,7 @@ const Hero = () => {
             data-aos-duration="1000"
             data-aos-delay="200"
           >
-            Bem-vindo ao Medeiros Jr. Associados
+            Bem-vindo ao <span className="text-accent">Medeiros Jr.</span> Associados
           </h1>
           
           <p 
