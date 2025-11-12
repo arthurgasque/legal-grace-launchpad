@@ -27,7 +27,7 @@ const App = () => {
       <TooltipProvider>
         <Toaster />
         <Sonner />
-        <BrowserRouter>
+        <BrowserRouter basename="/legal-grace-launchpad">
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/carta-ao-cliente" element={<CartaAoCliente />} />
