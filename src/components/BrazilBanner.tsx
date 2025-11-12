@@ -7,9 +7,9 @@ const BrazilBanner = () => {
       {/* Elementos Decorativos de Fundo */}
       <div className="absolute inset-0 pointer-events-none">
         {/* Círculos Desfocados - Intensificados */}
-        <div className="absolute top-0 left-0 w-80 h-80 bg-green-500/15 rounded-full blur-3xl animate-float-slow"></div>
-        <div className="absolute top-0 right-0 w-96 h-96 bg-yellow-400/20 rounded-full blur-3xl animate-float-slow-reverse"></div>
-        <div className="absolute bottom-0 right-1/4 w-72 h-72 bg-green-600/12 rounded-full blur-3xl animate-float-slow"></div>
+        <div className="absolute top-0 left-0 w-80 h-80 bg-green-500/25 rounded-full blur-3xl animate-float-slow"></div>
+        <div className="absolute top-0 right-0 w-96 h-96 bg-yellow-400/30 rounded-full blur-3xl animate-float-slow-reverse"></div>
+        <div className="absolute bottom-0 right-1/4 w-72 h-72 bg-green-600/20 rounded-full blur-3xl animate-float-slow"></div>
         
         {/* Círculos com Borda (Ring Effect) */}
         <div className="absolute top-1/4 right-1/4 w-32 h-32 border-2 border-green-500/20 rounded-full hidden sm:block"></div>
@@ -18,22 +18,6 @@ const BrazilBanner = () => {
         {/* Formas Geométricas Angulares */}
         <div className="absolute top-16 right-12 w-16 h-16 bg-green-600/10 rotate-45 hidden sm:block"></div>
         <div className="absolute bottom-20 left-16 w-12 h-12 bg-yellow-500/12 -rotate-12 hidden sm:block"></div>
-        
-        {/* Formas Orgânicas SVG - Intensificadas */}
-        <svg className="absolute left-0 top-1/4 w-48 h-auto opacity-[0.08] hidden sm:block" viewBox="0 0 200 200">
-          <path 
-            d="M0,100 Q50,50 100,100 T200,100 L200,200 L0,200 Z" 
-            fill="currentColor" 
-            className="text-green-600"
-          />
-        </svg>
-        <svg className="absolute right-0 top-1/3 w-56 h-auto opacity-[0.1] hidden sm:block" viewBox="0 0 200 200">
-          <path 
-            d="M200,100 Q150,150 100,100 T0,100 L0,200 L200,200 Z" 
-            fill="currentColor" 
-            className="text-yellow-500"
-          />
-        </svg>
         
         {/* Linhas Diagonais Mais Grossas */}
         <div className="absolute top-8 left-1/3 w-0.5 h-40 bg-gradient-to-b from-transparent via-green-600/25 to-transparent rotate-45 origin-top hidden md:block"></div>
