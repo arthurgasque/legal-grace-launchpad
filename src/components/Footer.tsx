@@ -88,7 +88,6 @@ const Footer = () => {
             </div>
 
             <div className="space-y-2">
-              <p className="text-white/60 text-sm">CNPJ: XX.XXX.XXX/XXXX-XX</p>
               <a
                 href="#"
                 className="text-white/80 hover:text-accent transition-colors text-sm block"
