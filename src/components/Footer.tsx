@@ -68,7 +68,9 @@ const Footer = () => {
             <h3 className="font-playfair text-xl font-bold mb-6">Redes Sociais</h3>
             <div className="flex gap-4 mb-8">
               <a
-                href="#"
+                href="https://www.facebook.com/medeirosjradvespecializada"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-accent transition-all hover:scale-110"
                 aria-label="Facebook"
               >
