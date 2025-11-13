@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { ArrowLeft, Scale, FileText, Clock, Users, Shield } from "lucide-react";
+import { ArrowLeft, Scale, FileText, Clock, Users, Shield, AlertTriangle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
 import Header from "@/components/Header";
@@ -143,9 +143,12 @@ const CartaAoCliente = () => {
                 </div>
 
                 <div className="bg-red-50 border-l-4 border-red-500 p-6 sm:p-8 rounded-r-lg">
-                  <h2 className="text-2xl sm:text-3xl font-playfair font-bold text-red-700 mb-4">
-                    Cuidado com Golpes
-                  </h2>
+                  <div className="flex items-center gap-3 mb-4">
+                    <AlertTriangle className="h-8 w-8 text-red-700 flex-shrink-0" />
+                    <h2 className="text-2xl sm:text-3xl font-playfair font-bold text-red-700">
+                      Cuidado com Golpes
+                    </h2>
+                  </div>
                   <p className="text-base sm:text-lg leading-relaxed text-red-900">
                     Caso receba mensagens ou ligações de outros números solicitando pagamentos antecipados, não realize transferências e entre diretamente em contato conosco para confirmar qualquer informação. Este é um problema que tem afetado profissionais em todo o país, e é nosso compromisso alertar nossos clientes para evitar qualquer situação de fraude.
                   </p>
