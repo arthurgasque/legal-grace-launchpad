@@ -161,7 +161,7 @@ export default {
         "slide-diagonal": "slide-diagonal 15s ease-in-out infinite",
         "slide-diagonal-reverse": "slide-diagonal-reverse 15s ease-in-out infinite",
         "pulse-glow": "pulse-glow 3s ease-in-out infinite",
-        "scale-breath": "scale-breath 3s ease-in-out infinite",
+        "scale-breath": "scale-breath 5s ease-in-out infinite",
       },
     },
   },
