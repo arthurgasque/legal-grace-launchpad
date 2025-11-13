@@ -63,15 +63,19 @@ const Contact = () => {
             ))}
           </div>
 
-          {/* Map placeholder */}
+          {/* Google Maps */}
           <Card className="overflow-hidden shadow-lg border-2 animate-fade-in">
-            <div className="h-96 bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
-              <div className="text-center">
-                <MapPin className="h-16 w-16 text-gray-400 mx-auto mb-4" />
-                <p className="text-gray-500 text-lg font-medium">Localização do Escritório</p>
-                <p className="text-gray-400 text-sm mt-2">Mapa do Google será integrado em breve</p>
-              </div>
-            </div>
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d711.0206412124162!2d-52.101972522432014!3d-32.03669029908207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95119dffd4bfd585%3A0x172729c28eb704fd!2sMedeiros%20Jr%20Advocacia%20Personalizada!5e0!3m2!1spt-BR!2sbr!4v1763062892139!5m2!1spt-BR!2sbr" 
+              width="100%" 
+              height="450" 
+              style={{ border: 0 }} 
+              allowFullScreen 
+              loading="lazy" 
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Localização Medeiros Jr. Advocacia"
+              className="w-full h-96"
+            />
           </Card>
         </div>
       </div>
