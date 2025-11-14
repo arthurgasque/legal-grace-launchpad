@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { useLocation, Link, useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
-import logo from "@/assets/logo-medeiros.png";
+import logo from "@/assets/logo-medeiros-jr.png";
 
 const Header = () => {
   const location = useLocation();
@@ -81,6 +81,11 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center gap-3 animate-fade-in">
             <img src={logo} alt="Medeiros Jr. Advocacia" className="h-12 w-auto" />
+            <span className={`text-xl font-bold tracking-wide transition-colors ${
+              isCartaPage ? "text-white" : isScrolled ? "text-foreground" : "text-white"
+            }`}>
+              MEDEIROS JR
+            </span>
           </div>
 
           {/* Desktop Menu */}
