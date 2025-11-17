@@ -18,8 +18,8 @@ const Contact = () => {
     {
       icon: MapPin,
       title: "Endereço",
-      content: "XXXXXXXX",
-      link: "#",
+      content: "R. Gen. Canabarro, 468 - Centro, Rio Grande - RS, 96200-200",
+      link: "https://maps.app.goo.gl/4g3wVdbjBPAbA9Dt7",
     },
   ];
 
