@@ -41,7 +41,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center gap-3 text-white/80">
                 <MapPin className="h-5 w-5 text-accent" />
-                <span>XXXXXXXX</span>
+                <span>R. Gen. Canabarro, 468 - Centro, Rio Grande - RS, 96200-200</span>
               </div>
             </div>
           </div>
