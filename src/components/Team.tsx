@@ -7,7 +7,11 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { Mail, MessageCircle, User } from "lucide-react";
+import hermesImage from "@/assets/hermes-medeiros.jpg";
+import djanineImage from "@/assets/djanine-medeiros.jpg";
+import alexImage from "@/assets/alex-farias.jpg";
 
 const Team = () => {
   const [selectedMember, setSelectedMember] = useState<number | null>(null);
@@ -19,6 +23,7 @@ const Team = () => {
       description: "Bacharel em direito pela Universidade Federal do Rio Grande – FURG no ano de 2013. Com atuação voltada para o Direito do Consumidor, Direito Bancário e Direito do Trabalho, especialmente na defesa dos direitos dos trabalhadores reclamantes, busca oferecer uma assessoria jurídica personalizada, pautada na ética, transparência e na efetiva solução dos conflitos. Seu trabalho é guiado pelo compromisso em garantir justiça, segurança jurídica e resultados concretos para cada cliente.",
       email: "XXXXXXXX",
       whatsapp: "5553984040489",
+      image: alexImage,
     },
     {
       name: "Hermes Medeiros Jr.",
@@ -26,6 +31,7 @@ const Team = () => {
       description: "Bacharel em direito pela Universidade Federal do Rio Grande – FURG no ano de 2013. Com atuação voltada para o Direito Tributário, Direito Civil e Direito do Trabalho, com foco na defesa dos interesses de empresas e empregadores, busca oferecer soluções jurídicas estratégicas, preventivas e eficientes. Seu trabalho é pautado na responsabilidade, técnica apurada e compromisso com a segurança jurídica e o equilíbrio nas relações empresariais.",
       email: "XXXXXXXX",
       whatsapp: "5553984060833",
+      image: hermesImage,
     },
     {
       name: "Djanine Lopes Pires Medeiros",
@@ -33,6 +39,7 @@ const Team = () => {
       description: "Bacharel em direito pela Universidade Federal do Rio Grande – FURG no ano de 2015 e especialização em Direito do Trabalho e Direito Previdenciário pela Anhanguera Educacional, possui ampla experiência em demandas contenciosas e assessoramento nas áreas trabalhista, previdenciária e sucessória. Destaca-se como especialista em inventários e planejamento sucessório, atuando de forma estratégica e de acordo com os objetivos individuais dos clientes. Seu compromisso aliado à experiência prática refletem a ética, a qualidade e a justiça em seu exercício profissional.",
       email: "XXXXXXXX",
       whatsapp: "5553984324397",
+      image: djanineImage,
     },
   ];
 
@@ -57,9 +64,13 @@ const Team = () => {
               onClick={() => setSelectedMember(index)}
             >
               <CardContent className="p-0">
-                {/* Image placeholder */}
-                <div className="relative h-80 bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center overflow-hidden group-hover:opacity-90 transition-opacity">
-                  <User className="h-32 w-32 text-gray-400" />
+                {/* Image */}
+                <div className="relative h-80 overflow-hidden group-hover:opacity-90 transition-opacity">
+                  <img 
+                    src={member.image} 
+                    alt={member.name}
+                    className="w-full h-full object-cover"
+                  />
                   <div className="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent"></div>
                 </div>
 
@@ -94,9 +105,12 @@ const Team = () => {
               <>
                 <DialogHeader>
                   <div className="flex items-center gap-4 mb-4">
-                    <div className="w-20 h-20 rounded-full bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center flex-shrink-0">
-                      <User className="h-10 w-10 text-gray-400" />
-                    </div>
+                    <Avatar className="w-20 h-20 flex-shrink-0">
+                      <AvatarImage src={team[selectedMember].image} alt={team[selectedMember].name} />
+                      <AvatarFallback>
+                        <User className="h-10 w-10" />
+                      </AvatarFallback>
+                    </Avatar>
                     <div className="text-left flex-1">
                       <DialogTitle className="text-2xl font-bold text-primary mb-1">
                         {team[selectedMember].name}
