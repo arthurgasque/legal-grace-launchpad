@@ -9,36 +9,52 @@ import { HelpCircle } from "lucide-react";
 const FAQ = () => {
   const faqs = [
     {
-      question: "Como funciona a contratação no escritório?",
-      answer: "Nosso escritório é composto por uma equipe de advogados e colaboradores altamente qualificados que trabalham de forma conjunta. Ao contratar o Medeiros Jr. Associados, você contará com uma estrutura colaborativa, onde diferentes especialistas poderão atuar em etapas específicas do processo, desde audiências até cálculos e pareceres jurídicos, garantindo máxima eficiência e expertise."
+      question: "O que fazer quando sou demitido sem justa causa em Rio Grande?",
+      answer: "Na demissão sem justa causa, você tem direito a saldo de salário, aviso prévio, férias proporcionais, 13º proporcional, FGTS com multa de 40% e seguro-desemprego. O Medeiros Jr. Advocacia oferece consultoria jurídica gratuita para analisar sua rescisão e garantir todos os seus direitos trabalhistas."
     },
     {
-      question: "As consultas são cobradas?",
-      answer: "As consultas realizadas no momento inicial do atendimento ou ao longo do andamento processual, em regra, não são cobradas. Os honorários advocatícios geralmente correspondem a um percentual sobre o benefício financeiro obtido com a solução do caso e são acordados de forma transparente, conforme as especificidades de cada situação."
+      question: "Como funciona a ação trabalhista para receber horas extras não pagas?",
+      answer: "Se você trabalhou além da jornada sem receber, pode entrar com reclamação trabalhista em até 2 anos após a rescisão. Nosso escritório atua em Rio Grande, região Sul e todo Brasil, inclusive com atendimento jurídico online para recuperar suas horas extras."
     },
     {
-      question: "Qual o canal oficial de comunicação?",
-      answer: "Disponibilizamos canal via WhatsApp através dos contatos diretos da nossa equipe. Por esse canal, você pode agendar consultas, obter atualizações sobre o andamento processual, receber informações sobre audiências e perícias, e tratar de questões financeiras. Atenção: caso receba mensagens de outros números solicitando pagamentos, entre em contato conosco para confirmar."
+      question: "Qual o prazo para entrar com ação trabalhista no Rio Grande do Sul?",
+      answer: "O prazo para reclamação trabalhista é de até 2 anos após o desligamento, limitado aos últimos 5 anos trabalhados. Agende uma consulta gratuita com advogado trabalhista para avaliar seu caso antes que o prazo prescreva."
     },
     {
-      question: "Quanto tempo demora um processo?",
-      answer: "O andamento de cada etapa não depende apenas do advogado, mas de diversos fatores externos como volume de processos, atuação de juízes, peritos, servidores e recursos nos tribunais superiores. Quando o processo chega à fase dos tribunais, o tempo pode ser consideravelmente maior devido à sobrecarga do sistema judiciário. Mantemos você sempre informado sobre cada etapa."
+      question: "Advogado trabalhista cobra quanto? Como funcionam os honorários?",
+      answer: "No Medeiros Jr., a consulta inicial é gratuita. Os honorários advocatícios geralmente são um percentual do valor obtido na ação, acordado de forma transparente. Trabalhamos com atendimento presencial em Rio Grande e online para todo o Brasil."
     },
     {
-      question: "Como funciona a audiência na Justiça do Trabalho?",
-      answer: "Nas ações trabalhistas, a primeira audiência é obrigatória e sua presença é indispensável - caso não compareça, o processo poderá ser arquivado. Geralmente, após 60 dias da contratação, já é possível conhecer a data da audiência. Assim que obtivermos essa informação, nossa equipe entrará em contato com todos os detalhes sobre data, horário e orientações necessárias."
+      question: "Como pedir aposentadoria pelo INSS em Rio Grande?",
+      answer: "Para aposentadoria, é necessário reunir documentos de identidade, CPF, comprovantes de contribuição e carteira de trabalho. O Medeiros Jr. oferece assessoria completa para aposentadoria por idade, tempo de contribuição ou invalidez, com atendimento em Rio Grande e região Sul."
     },
     {
-      question: "Posso ter certeza de que vou ganhar a ação?",
-      answer: "O sucesso de um processo depende de inúmeros fatores, como interpretação de provas, testemunhas, documentos apresentados e a postura dos juízes quanto à aplicação das leis. Embora seja possível avaliar tendências jurisprudenciais, não podemos garantir o resultado. Nosso compromisso é trabalhar com ética, técnica e dedicação para buscar sempre as melhores alternativas para o seu caso."
+      question: "O que é revisão de aposentadoria e quando posso pedir?",
+      answer: "A revisão de aposentadoria corrige cálculos errados do INSS e pode aumentar seu benefício. O prazo é de até 10 anos da concessão. Nosso escritório realiza análise gratuita para verificar se você tem direito à revisão previdenciária."
     },
     {
-      question: "Quando ocorre o pagamento do processo?",
-      answer: "Quando a Justiça reconhece o direito do cliente, inicia-se a fase de execução para liquidação do valor. Essa fase pode ser tão ou mais demorada que o processo principal, pois envolve cálculos, impugnações, penhoras e leilões. Se envolver órgãos públicos, seguirá para a fase de precatórios, que exige habilitação no orçamento público. Nosso trabalho é mantê-lo informado durante todo o processo."
+      question: "Como funciona o divórcio consensual em Rio Grande RS?",
+      answer: "No divórcio consensual, o casal entra em acordo sobre partilha, guarda e pensão. Pode ser feito em cartório (se não houver filhos menores) ou judicialmente. O Medeiros Jr. atende em Rio Grande com consultoria para divórcio, pensão alimentícia e guarda compartilhada."
     },
     {
-      question: "Como me protejo de golpes?",
-      answer: "Caso receba mensagens ou ligações de números desconhecidos solicitando pagamentos antecipados, NÃO realize transferências. Entre diretamente em contato conosco através dos números oficiais da equipe para confirmar qualquer informação. Este é um problema que tem afetado profissionais em todo o país, e é nosso compromisso alertar nossos clientes para evitar fraudes."
+      question: "Posso contratar advogado online para atendimento jurídico à distância?",
+      answer: "Sim! Oferecemos consultoria jurídica online para clientes em todo o Brasil. Por WhatsApp ou videochamada, você agenda consultas, tira dúvidas e acompanha processos de qualquer lugar, com a mesma qualidade do atendimento presencial em Rio Grande."
+    },
+    {
+      question: "Escritório de advocacia em Rio Grande atende quais regiões?",
+      answer: "O Medeiros Jr. Advocacia está sediado em Rio Grande – RS e atende toda a região Sul, além de prestar serviços jurídicos online para clientes em todo o Brasil. Atuamos em Direito Trabalhista, Previdenciário, Família, Civil e Consumidor."
+    },
+    {
+      question: "Como agendar consulta jurídica gratuita com advogado?",
+      answer: "Entre em contato pelo WhatsApp oficial do escritório. A consulta inicial é gratuita e você pode escolher atendimento presencial em Rio Grande ou consultoria jurídica online. Respondemos rapidamente para avaliar seu caso."
+    },
+    {
+      question: "Quanto tempo demora um processo trabalhista ou previdenciário?",
+      answer: "O prazo varia conforme a complexidade: processos trabalhistas costumam levar de 1 a 3 anos; previdenciários, de 6 meses a 2 anos. Mantemos você informado sobre cada etapa via WhatsApp e atualizações regulares."
+    },
+    {
+      question: "Qual a diferença entre advogado e defensor público?",
+      answer: "O advogado particular oferece atendimento personalizado, contato direto e estratégia focada no seu caso. A Defensoria Pública atende apenas quem não pode pagar advogado. No Medeiros Jr., a consulta é gratuita e os honorários só são cobrados em caso de êxito."
     }
   ];
 
