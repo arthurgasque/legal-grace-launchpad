@@ -10,7 +10,7 @@ const FAQ = () => {
   const faqs = [
     {
       question: "O que fazer quando sou demitido sem justa causa em Rio Grande?",
-      answer: "Na demissão sem justa causa, você tem direito a saldo de salário, aviso prévio, férias proporcionais, 13º proporcional, FGTS com multa de 40% e seguro-desemprego. O Medeiros Jr. Advocacia oferece consultoria jurídica gratuita para analisar sua rescisão e garantir todos os seus direitos trabalhistas."
+      answer: "Na demissão sem justa causa, você tem direito a saldo de salário, aviso prévio, férias proporcionais, 13º proporcional, FGTS com multa de 40% e seguro-desemprego. O Medeiros Jr. Advocacia está à disposição para analisar sua rescisão e garantir todos os seus direitos trabalhistas."
     },
     {
       question: "Como funciona a ação trabalhista para receber horas extras não pagas?",
@@ -18,11 +18,11 @@ const FAQ = () => {
     },
     {
       question: "Qual o prazo para entrar com ação trabalhista no Rio Grande do Sul?",
-      answer: "O prazo para reclamação trabalhista é de até 2 anos após o desligamento, limitado aos últimos 5 anos trabalhados. Agende uma consulta gratuita com advogado trabalhista para avaliar seu caso antes que o prazo prescreva."
+      answer: "O prazo para reclamação trabalhista é de até 2 anos após o desligamento, limitado aos últimos 5 anos trabalhados. Entre em contato com advogado trabalhista para avaliar seu caso antes que o prazo prescreva."
     },
     {
-      question: "Advogado trabalhista cobra quanto? Como funcionam os honorários?",
-      answer: "No Medeiros Jr., a consulta inicial é gratuita. Os honorários advocatícios geralmente são um percentual do valor obtido na ação, acordado de forma transparente. Trabalhamos com atendimento presencial em Rio Grande e online para todo o Brasil."
+      question: "Como funciona o primeiro contato com o escritório Medeiros Jr.?",
+      answer: "O primeiro contato pode ser feito por WhatsApp, telefone ou e-mail. Nossa equipe irá entender seu caso, explicar as possibilidades jurídicas e orientar sobre os próximos passos. Atendemos presencialmente em Rio Grande e online para todo o Brasil."
     },
     {
       question: "Como pedir aposentadoria pelo INSS em Rio Grande?",
@@ -30,7 +30,7 @@ const FAQ = () => {
     },
     {
       question: "O que é revisão de aposentadoria e quando posso pedir?",
-      answer: "A revisão de aposentadoria corrige cálculos errados do INSS e pode aumentar seu benefício. O prazo é de até 10 anos da concessão. Nosso escritório realiza análise gratuita para verificar se você tem direito à revisão previdenciária."
+      answer: "A revisão de aposentadoria corrige cálculos errados do INSS e pode aumentar seu benefício. O prazo é de até 10 anos da concessão. Nosso escritório pode analisar seu caso para verificar se você tem direito à revisão previdenciária."
     },
     {
       question: "Como funciona o divórcio consensual em Rio Grande RS?",
@@ -45,8 +45,8 @@ const FAQ = () => {
       answer: "O Medeiros Jr. Advocacia está sediado em Rio Grande – RS e atende toda a região Sul, além de prestar serviços jurídicos online para clientes em todo o Brasil. Atuamos em Direito Trabalhista, Previdenciário, Família, Civil e Consumidor."
     },
     {
-      question: "Como agendar consulta jurídica gratuita com advogado?",
-      answer: "Entre em contato pelo WhatsApp oficial do escritório. A consulta inicial é gratuita e você pode escolher atendimento presencial em Rio Grande ou consultoria jurídica online. Respondemos rapidamente para avaliar seu caso."
+      question: "Como é o processo de atendimento no Medeiros Jr. Advocacia?",
+      answer: "Após o contato inicial por WhatsApp, telefone ou e-mail, analisamos seu caso e apresentamos as estratégias jurídicas disponíveis. Você pode escolher atendimento presencial em Rio Grande ou consultoria online por videochamada. Mantemos comunicação transparente em todas as etapas."
     },
     {
       question: "Quanto tempo demora um processo trabalhista ou previdenciário?",
@@ -54,7 +54,7 @@ const FAQ = () => {
     },
     {
       question: "Qual a diferença entre advogado e defensor público?",
-      answer: "O advogado particular oferece atendimento personalizado, contato direto e estratégia focada no seu caso. A Defensoria Pública atende apenas quem não pode pagar advogado. No Medeiros Jr., a consulta é gratuita e os honorários só são cobrados em caso de êxito."
+      answer: "O advogado particular oferece atendimento personalizado, contato direto e estratégia focada no seu caso. A Defensoria Pública atende apenas quem não pode pagar advogado. No Medeiros Jr., oferecemos atendimento dedicado com foco total nas necessidades do seu caso."
     }
   ];
 
