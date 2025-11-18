@@ -13,4 +13,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://medeirosadvocacia.com.br/sitemap.xml
+Sitemap: https://medeirosjr.adv.br/sitemap.xml
