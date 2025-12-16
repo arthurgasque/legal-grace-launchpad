@@ -39,7 +39,7 @@ const About = () => {
             </h2>
 
             <p className="text-base sm:text-lg text-muted-foreground leading-relaxed mb-6">
-              Desde a nossa fundação o escritório<strong className="text-primary">MEDEIROS JR. ADVOCACIA</strong> atua
+              Desde a nossa fundação o escritório <strong className="text-primary"> MEDEIROS JR. ADVOCACIA</strong> atua
               com comprometimento absoluto na prestação de seus serviços. Oferecemos de forma especializada nosso
               trabalho em diversas áreas do Direito, proporcionando soluções jurídicas personalizadas e eficientes.
             </p>
