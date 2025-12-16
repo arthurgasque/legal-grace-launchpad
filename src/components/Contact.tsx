@@ -6,14 +6,14 @@ const Contact = () => {
     {
       icon: Phone,
       title: "Telefone",
-      content: "XXXXXXXX",
-      link: "tel:XXXXXXXX",
+      content: "+55 53 8406-0833",
+      link: "tel:+5553984060833",
     },
     {
       icon: Mail,
       title: "E-mail",
-      content: "XXXXXXXX",
-      link: "mailto:XXXXXXXX",
+      content: "escritorio@medeirosjr.adv.br",
+      link: "mailto:escritorio@medeirosjr.adv.br",
     },
     {
       icon: MapPin,
