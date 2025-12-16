@@ -4,7 +4,7 @@ import whatsappIcon from "@/assets/whatsapp-icon.png";
 const WhatsAppButton = () => {
   const handleWhatsAppClick = () => {
     window.open(
-      `https://wa.me/XXXXXXXX?text=Olá, gostaria de mais informações sobre os serviços jurídicos`,
+      `https://wa.me/5553984060833?text=Olá, gostaria de mais informações sobre os serviços jurídicos`,
       "_blank"
     );
   };
