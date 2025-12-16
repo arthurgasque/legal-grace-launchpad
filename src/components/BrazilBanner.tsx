@@ -26,15 +26,15 @@ const BrazilBanner = () => {
           
           {/* Tag Premium com Ícone */}
           <div 
-            className="inline-flex items-center gap-2 bg-white/20 px-4 py-2 rounded-full mb-6"
+            className="inline-flex items-center gap-3 bg-white/20 px-6 py-3 rounded-full mb-6"
             data-aos="fade-down"
             data-aos-duration="600"
           >
             <MapPin 
-              className="h-4 w-4 text-white" 
+              className="h-5 w-5 text-white" 
               strokeWidth={2}
             />
-            <span className="text-xs font-bold uppercase tracking-wider text-white">
+            <span className="text-sm font-bold uppercase tracking-wider text-white">
               Abrangência Nacional
             </span>
           </div>
