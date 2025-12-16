@@ -19,7 +19,7 @@ const About = () => {
     },
     {
       icon: Award,
-      title: "Excelência Jurídica",
+      title: "Excelência",
       description: "Equipe experiente e qualificada",
     },
   ];
