@@ -1,27 +1,32 @@
-import { Scale, Briefcase, Users, FileText, Gavel, Building, ShoppingCart, CreditCard, Landmark } from "lucide-react";
+import { Scale, Briefcase, Users, ShoppingCart, CreditCard, Landmark, Shield } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const Services = () => {
   const services = [
     {
+      icon: Briefcase,
+      title: "Direito do Trabalho",
+      description: "Foco na defesa de trabalhadores. Atuamos em demandas relacionadas a reconhecimento de vínculo, verbas rescisórias, revisão de salário, jornada de trabalho, assédio moral, condições de trabalho, acidentes laborais e outros direitos trabalhistas.",
+    },
+    {
+      icon: Shield,
+      title: "Direito Previdenciário",
+      description: "Atuamos na interposição e acompanhamento de processos tanto administrativos, junto à Previdência Social, quanto judiciais, na busca do Direito de pretensos beneficiários junto ao Regime Geral da Previdência. Entre os benefícios podemos destacar auxílio incapacidade temporária, auxílio-acidente, aposentadorias, auxílio-reclusão, salário maternidade, pensão por morte, benefícios assistenciais (LOAS), retificação, reconhecimento, averbação de vínculos, planejamentos previdenciários e outros.",
+    },
+    {
+      icon: Users,
+      title: "Direito de Família e Sucessões",
+      description: "Consultoria e atuação em inventários extrajudicial – cartórios – e judicial, testamentos, planejamento sucessório (testamentos, doações), partilha de bens, visando à preservação de patrimônio e segurança jurídica nas relações familiares. Além disso, atuamos nos procedimentos de regularização e transferência de patrimônio, bem como no levantamento de resíduos de benefícios ou valores e procedimentos que necessitem de alvará judicial.",
+    },
+    {
+      icon: Scale,
+      title: "Direito Civil",
+      description: "Atuação específica em planejamento matrimonial (contratos de casamento, namoro, pacto antinupcial), divórcios, pensão alimentícia, regularização de imóveis (usucapião), curatela/interdição, locações, cobranças/execuções, superendividamento, empréstimos indevidos, ações contra convênios médicos, atraso na entrega de imóveis, elaboração e análise de contratos e demais conflitos que envolvam relações interpessoais.",
+    },
+    {
       icon: ShoppingCart,
       title: "Direito do Consumidor",
       description: "Defesa dos direitos dos consumidores, assegurando o cumprimento das normas que regulam as relações de consumo. Atuação em casos de práticas abusivas, contratos, cobranças indevidas e vícios de produtos ou serviços.",
-    },
-    {
-      icon: CreditCard,
-      title: "Direito Bancário",
-      description: "Consultoria e representação em questões relacionadas a instituições financeiras, como revisão de contratos, cobranças excessivas, negociações e demandas judiciais ou extrajudiciais.",
-    },
-    {
-      icon: Briefcase,
-      title: "Direito do Trabalho – Reclamante",
-      description: "Foco na defesa de trabalhadores. Atuamos em demandas relacionadas a verbas rescisórias, assédio moral, condições de trabalho, acidentes laborais e outros direitos trabalhistas.",
-    },
-    {
-      icon: Building,
-      title: "Direito do Trabalho – Reclamado",
-      description: "Defesa de empresas, empregadores e organizações em demandas trabalhistas, com uma atuação estratégica e preventiva, visando a regularidade e sustentabilidade nas relações de trabalho.",
     },
     {
       icon: Landmark,
@@ -29,14 +34,9 @@ const Services = () => {
       description: "Assessoria em questões tributárias para empresas e pessoas físicas, com foco na redução de passivos tributários, planejamento fiscal e contencioso tributário.",
     },
     {
-      icon: Scale,
-      title: "Direito Civil",
-      description: "Atuação em demandas contratuais, responsabilidade civil, direito das obrigações, locações, cobranças e demais conflitos que envolvam relações interpessoais.",
-    },
-    {
-      icon: Users,
-      title: "Sucessões",
-      description: "Consultoria e atuação em inventários, testamentos, planejamento sucessório e partilha de bens, visando à preservação de patrimônio e segurança jurídica nas relações familiares.",
+      icon: CreditCard,
+      title: "Direito Bancário",
+      description: "Consultoria e representação em questões relacionadas a instituições financeiras, como revisão de contratos, cobranças excessivas, negociações e demandas judiciais ou extrajudiciais.",
     },
   ];
 
