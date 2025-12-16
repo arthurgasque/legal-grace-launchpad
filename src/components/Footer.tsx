@@ -31,14 +31,14 @@ const Footer = () => {
               com foco em excelência, ética e resultados para nossos clientes.
             </p>
             <div className="space-y-3">
-              <div className="flex items-center gap-3 text-white/80 hover:text-accent transition-colors">
+              <a href="tel:+5553984060833" className="flex items-center gap-3 text-white/80 hover:text-accent transition-colors">
                 <Phone className="h-5 w-5 text-accent" />
-                <span>XXXXXXXX</span>
-              </div>
-              <div className="flex items-center gap-3 text-white/80 hover:text-accent transition-colors">
+                <span>+55 53 8406-0833</span>
+              </a>
+              <a href="mailto:escritorio@medeirosjr.adv.br" className="flex items-center gap-3 text-white/80 hover:text-accent transition-colors">
                 <Mail className="h-5 w-5 text-accent" />
-                <span>XXXXXXXX</span>
-              </div>
+                <span>escritorio@medeirosjr.adv.br</span>
+              </a>
               <div className="flex items-center gap-3 text-white/80">
                 <MapPin className="h-5 w-5 text-accent" />
                 <span>R. Gen. Canabarro, 468 - Centro, Rio Grande - RS, 96200-200</span>
