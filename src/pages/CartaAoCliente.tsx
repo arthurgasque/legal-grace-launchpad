@@ -183,22 +183,22 @@ específicos.
                         <MessageSquare className="h-5 w-5 text-blue-600" />
                         <span className="font-semibold text-blue-800">Telefones / WhatsApp</span>
                       </div>
-                      <div className="grid grid-cols-2 gap-2 sm:gap-3">
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-3">
                         <a href="tel:+5553991365429" className="flex items-center gap-2 bg-blue-100 hover:bg-blue-200 rounded-lg px-3 py-2 transition-colors">
-                          <Phone className="h-4 w-4 text-blue-600" />
-                          <span className="text-sm sm:text-base font-medium">(53) 99136-5429</span>
+                          <Phone className="h-4 w-4 text-blue-600 flex-shrink-0" />
+                          <span className="text-sm sm:text-base font-medium whitespace-nowrap">(53) 99136-5429</span>
                         </a>
                         <a href="tel:+5553984060833" className="flex items-center gap-2 bg-blue-100 hover:bg-blue-200 rounded-lg px-3 py-2 transition-colors">
-                          <Phone className="h-4 w-4 text-blue-600" />
-                          <span className="text-sm sm:text-base font-medium">(53) 98406-0833</span>
+                          <Phone className="h-4 w-4 text-blue-600 flex-shrink-0" />
+                          <span className="text-sm sm:text-base font-medium whitespace-nowrap">(53) 98406-0833</span>
                         </a>
                         <a href="tel:+5553984324397" className="flex items-center gap-2 bg-blue-100 hover:bg-blue-200 rounded-lg px-3 py-2 transition-colors">
-                          <Phone className="h-4 w-4 text-blue-600" />
-                          <span className="text-sm sm:text-base font-medium">(53) 98432-4397</span>
+                          <Phone className="h-4 w-4 text-blue-600 flex-shrink-0" />
+                          <span className="text-sm sm:text-base font-medium whitespace-nowrap">(53) 98432-4397</span>
                         </a>
                         <a href="tel:+5553984040489" className="flex items-center gap-2 bg-blue-100 hover:bg-blue-200 rounded-lg px-3 py-2 transition-colors">
-                          <Phone className="h-4 w-4 text-blue-600" />
-                          <span className="text-sm sm:text-base font-medium">(53) 98404-0489</span>
+                          <Phone className="h-4 w-4 text-blue-600 flex-shrink-0" />
+                          <span className="text-sm sm:text-base font-medium whitespace-nowrap">(53) 98404-0489</span>
                         </a>
                       </div>
                       <p className="text-sm text-blue-600 mt-3">
