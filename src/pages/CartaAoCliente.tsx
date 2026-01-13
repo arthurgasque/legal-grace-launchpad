@@ -146,12 +146,7 @@ específicos.
                   <div className="flex items-center gap-3 mb-4">
                     <AlertTriangle className="h-8 w-8 text-red-700 flex-shrink-0" />
                     <h2 className="text-2xl sm:text-3xl font-playfair font-bold text-red-700">
-                      Nosso escritório não envia mensagens ou faz ligações de
-outros números solicitando pagamentos antecipados. Portanto, NÃO realize
-transferências bancárias ou qualquer tipo de pagamento sem antes entrar em
-contato conosco para confirmar qualquer informação. Este é um problema que tem
-afetado profissionais em todos o país, e é nosso compromisso alertar nossos
-clientes para evitar qualquer situação de fraude.
+                      Cuidado com Golpes
                     </h2>
                   </div>
                   <p className="text-base sm:text-lg leading-relaxed text-red-900">
