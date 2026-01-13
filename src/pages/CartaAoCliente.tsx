@@ -150,7 +150,7 @@ específicos.
                     </h2>
                   </div>
                   <p className="text-base sm:text-lg leading-relaxed text-red-900">
-                    Caso receba mensagens ou ligações de outros números solicitando pagamentos antecipados, não realize transferências e entre diretamente em contato conosco para confirmar qualquer informação. Este é um problema que tem afetado profissionais em todo o país, e é nosso compromisso alertar nossos clientes para evitar qualquer situação de fraude.
+                    Nosso escritório não envia mensagens ou faz ligações de outros números solicitando pagamentos antecipados. Portanto, NÃO realize transferências bancárias ou qualquer tipo de pagamento sem antes entrar em contato conosco para confirmar qualquer informação. Este é um problema que tem afetado profissionais em todos o país, e é nosso compromisso alertar nossos clientes para evitar qualquer situação de fraude.
                   </p>
                 </div>
 
