@@ -2,31 +2,9 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Phone, Mail, MapPin } from "lucide-react";
 
 const Contact = () => {
-  const contactInfo = [
-    {
-      icon: Phone,
-      title: "Telefone",
-      content: "+55 53 8406-0833",
-      link: "tel:+5553984060833",
-    },
-    {
-      icon: Mail,
-      title: "E-mail",
-      content: "escritorio@medeirosjr.adv.br",
-      link: "mailto:escritorio@medeirosjr.adv.br",
-    },
-    {
-      icon: Mail,
-      title: "E-mail",
-      content: "medeirosjr.associados@gmail.com",
-      link: "mailto:medeirosjr.associados@gmail.com",
-    },
-    {
-      icon: MapPin,
-      title: "Endereço",
-      content: "R. Gen. Canabarro, 468 - Centro, Rio Grande - RS, 96200-200",
-      link: "https://maps.app.goo.gl/4g3wVdbjBPAbA9Dt7",
-    },
+  const emails = [
+    { content: "escritorio@medeirosjr.adv.br", link: "mailto:escritorio@medeirosjr.adv.br" },
+    { content: "medeirosjr.associados@gmail.com", link: "mailto:medeirosjr.associados@gmail.com" },
   ];
 
   return (
@@ -43,30 +21,75 @@ const Contact = () => {
 
         <div className="max-w-4xl mx-auto">
           {/* Contact Info */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 mb-12 animate-fade-in">
-            {contactInfo.map((item, index) => (
-              <Card
-                key={index}
-                className="group hover:shadow-md transition-all hover:scale-105 border-2 hover:border-accent/50"
-              >
-                <CardContent className="p-6">
-                  <a
-                    href={item.link}
-                    className="flex flex-col items-center text-center gap-4"
-                  >
-                    <div className="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center group-hover:bg-accent transition-all">
-                      <item.icon className="h-8 w-8 text-accent group-hover:text-white transition-colors" />
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 mb-12 animate-fade-in">
+            {/* Telefone */}
+            <Card className="group hover:shadow-md transition-all hover:scale-105 border-2 hover:border-accent/50">
+              <CardContent className="p-6">
+                <a
+                  href="tel:+5553984060833"
+                  className="flex flex-col items-center text-center gap-4"
+                >
+                  <div className="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center group-hover:bg-accent transition-all">
+                    <Phone className="h-8 w-8 text-accent group-hover:text-white transition-colors" />
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-primary mb-2 group-hover:text-accent transition-colors text-lg">
+                      Telefone
+                    </h3>
+                    <p className="text-muted-foreground text-sm">+55 53 8406-0833</p>
+                  </div>
+                </a>
+              </CardContent>
+            </Card>
+
+            {/* E-mails */}
+            <Card className="group hover:shadow-md transition-all hover:scale-105 border-2 hover:border-accent/50">
+              <CardContent className="p-6">
+                <div className="flex flex-col items-center text-center gap-4">
+                  <div className="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center group-hover:bg-accent transition-all">
+                    <Mail className="h-8 w-8 text-accent group-hover:text-white transition-colors" />
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-primary mb-2 group-hover:text-accent transition-colors text-lg">
+                      E-mails
+                    </h3>
+                    <div className="space-y-1">
+                      {emails.map((email, index) => (
+                        <a
+                          key={index}
+                          href={email.link}
+                          className="block text-muted-foreground text-sm hover:text-accent transition-colors"
+                        >
+                          {email.content}
+                        </a>
+                      ))}
                     </div>
-                    <div>
-                      <h3 className="font-bold text-primary mb-2 group-hover:text-accent transition-colors text-lg">
-                        {item.title}
-                      </h3>
-                      <p className="text-muted-foreground text-sm">{item.content}</p>
-                    </div>
-                  </a>
-                </CardContent>
-              </Card>
-            ))}
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Endereço */}
+            <Card className="group hover:shadow-md transition-all hover:scale-105 border-2 hover:border-accent/50">
+              <CardContent className="p-6">
+                <a
+                  href="https://maps.app.goo.gl/4g3wVdbjBPAbA9Dt7"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex flex-col items-center text-center gap-4"
+                >
+                  <div className="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center group-hover:bg-accent transition-all">
+                    <MapPin className="h-8 w-8 text-accent group-hover:text-white transition-colors" />
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-primary mb-2 group-hover:text-accent transition-colors text-lg">
+                      Endereço
+                    </h3>
+                    <p className="text-muted-foreground text-sm">R. Gen. Canabarro, 468 - Centro, Rio Grande - RS</p>
+                  </div>
+                </a>
+              </CardContent>
+            </Card>
           </div>
 
           {/* Google Maps */}
