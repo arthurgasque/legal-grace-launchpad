@@ -169,7 +169,7 @@ específicos.
                       Nossos canais de atendimento são pelos números telefônicos (53) 991365429, 53 984060833, 53 984324397 e 53 984040489, onde você pode agendar atendimentos, obter informações gerais de audiências, de perícias, bem como contatar nosso setor financeiro.
                     </p>
                     <p>
-                      O envio de documentos deve ser feito, obrigatoriamente, por meio do e-mail medeirosjr.associados@gmail.com. Não serão aceitos envios por meio de outras fontes, especialmente WhatsApp, bem como não serão retidos quaisquer documentos no atendimento, ficando o Cliente com a responsabilidade de encaminhá-los na forma digital, de acordo com o que versa a LGPD.
+                      O envio de documentos deve ser feito, obrigatoriamente, por meio do e-mail <a href="mailto:medeirosjr.associados@gmail.com" className="font-semibold underline hover:text-blue-600 transition-colors">medeirosjr.associados@gmail.com</a>. Não serão aceitos envios por meio de outras fontes, especialmente WhatsApp, bem como não serão retidos quaisquer documentos no atendimento, ficando o Cliente com a responsabilidade de encaminhá-los na forma digital, de acordo com o que versa a LGPD.
                     </p>
                   </div>
                 </div>
