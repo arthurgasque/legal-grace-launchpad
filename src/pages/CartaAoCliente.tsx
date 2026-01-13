@@ -77,7 +77,7 @@ const CartaAoCliente = () => {
                   <FileText className="h-8 w-8 text-accent mb-4" />
                   <h3 className="text-xl font-bold text-primary mb-2">Honorários Transparentes</h3>
                   <p className="text-muted-foreground">
-                    Percentual sobre o benefício obtido, acordado de forma clara
+                    Contrato de prestação de serviços celebrado de forma clara, com a devida prestação de contas
                   </p>
                 </div>
 
@@ -85,7 +85,7 @@ const CartaAoCliente = () => {
                   <Clock className="h-8 w-8 text-accent mb-4" />
                   <h3 className="text-xl font-bold text-primary mb-2">Comunicação Direta</h3>
                   <p className="text-muted-foreground">
-                    Atendimento via WhatsApp para consultas, audiências e atualizações
+                    Atendimentos com hora marcada, presencialmente ou por videoconferência
                   </p>
                 </div>
 
@@ -93,7 +93,7 @@ const CartaAoCliente = () => {
                   <Shield className="h-8 w-8 text-accent mb-4" />
                   <h3 className="text-xl font-bold text-primary mb-2">Segurança e Ética</h3>
                   <p className="text-muted-foreground">
-                    Compromisso com a Justiça e defesa dos direitos dos clientes
+                    Compromisso com a justiça e direitos dos nossos clientes
                   </p>
                 </div>
               </div>
