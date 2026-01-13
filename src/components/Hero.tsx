@@ -28,7 +28,7 @@ const Hero = () => {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-6 py-3 mb-8" data-aos="fade-down" data-aos-duration="800">
             <Scale className="h-5 w-5 text-accent" />
-            <span className="text-white font-medium tracking-wide">Advocacia de Excelência</span>
+            <span className="text-white font-medium tracking-wide">Advocacia Especializada</span>
           </div>
 
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-playfair font-bold text-white mb-6 leading-tight" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
