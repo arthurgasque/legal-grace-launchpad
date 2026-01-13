@@ -16,6 +16,12 @@ const Contact = () => {
       link: "mailto:escritorio@medeirosjr.adv.br",
     },
     {
+      icon: Mail,
+      title: "E-mail",
+      content: "medeirosjr.associados@gmail.com",
+      link: "mailto:medeirosjr.associados@gmail.com",
+    },
+    {
       icon: MapPin,
       title: "Endereço",
       content: "R. Gen. Canabarro, 468 - Centro, Rio Grande - RS, 96200-200",
@@ -37,7 +43,7 @@ const Contact = () => {
 
         <div className="max-w-4xl mx-auto">
           {/* Contact Info */}
-          <div className="grid md:grid-cols-3 gap-6 mb-12 animate-fade-in">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 mb-12 animate-fade-in">
             {contactInfo.map((item, index) => (
               <Card
                 key={index}
