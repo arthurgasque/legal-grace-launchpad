@@ -1,5 +1,5 @@
 import { CheckCircle2, Scale, Users, Award, Target, Shield, Heart } from "lucide-react";
-import aboutImage from "@/assets/about-office.jpg";
+import aboutImage from "@/assets/escritorio.jpg";
 const About = () => {
   const differentials = [{
     icon: Shield,
