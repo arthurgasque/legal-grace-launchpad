@@ -100,7 +100,11 @@ const CartaAoCliente = () => {
                     Nosso escritório é composto por uma equipe de advogados e colaboradores altamente qualificados, que trabalham de forma conjunta para garantir a melhor experiência e atendimento aos nossos clientes.
                   </p>
                   <p className="text-base sm:text-lg leading-relaxed text-muted-foreground">
-                    Ao contratar os serviços do Medeiros Jr. Associados, você estará confiando em uma estrutura colaborativa. Isso significa que, embora um advogado possa ser seu primeiro ponto de contato, outros integrantes especializados da equipe poderão atuar em diferentes etapas do processo, desde audiências até a realização de cálculos e pareceres jurídicos. Nosso modelo de trabalho integrado assegura que cada caso seja tratado com o máximo de eficiência e expertise.
+                    Os honorários advocatícios, geralmente, correspondem a um percentual sobre o
+benefício ou da economia financeira obtida com a solução do caso. Entretanto, há
+casos que demandam maior complexidade e que precisam ser tratados de forma
+específica. Independente de qual seja a demanda, todas são tratadas de forma
+transparente e facilitada, sempre garantindo a maior comodidade ao cliente. 
                   </p>
                 </div>
 
