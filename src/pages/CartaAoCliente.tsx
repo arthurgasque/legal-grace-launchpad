@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { ArrowLeft, Scale, FileText, Clock, Users, Shield, AlertTriangle } from "lucide-react";
+import { ArrowLeft, Scale, FileText, Clock, Users, Shield, AlertTriangle, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
 import Header from "@/components/Header";
@@ -152,6 +152,26 @@ específicos.
                   <p className="text-base sm:text-lg leading-relaxed text-red-900">
                     Nosso escritório não envia mensagens ou faz ligações de outros números solicitando pagamentos antecipados. Portanto, NÃO realize transferências bancárias ou qualquer tipo de pagamento sem antes entrar em contato conosco para confirmar qualquer informação. Este é um problema que tem afetado profissionais em todos o país, e é nosso compromisso alertar nossos clientes para evitar qualquer situação de fraude.
                   </p>
+                </div>
+
+                <div className="bg-blue-50 border-l-4 border-blue-500 p-6 sm:p-8 rounded-r-lg">
+                  <div className="flex items-center gap-3 mb-4">
+                    <Phone className="h-8 w-8 text-blue-700 flex-shrink-0" />
+                    <h2 className="text-2xl sm:text-3xl font-playfair font-bold text-blue-700">
+                      Central de Atendimento
+                    </h2>
+                  </div>
+                  <div className="space-y-4 text-base sm:text-lg leading-relaxed text-blue-900">
+                    <p>
+                      O escritório conta com uma central de atendimento especialmente criada para atender você. Nossos horários de atendimento são: de segunda a quinta-feira, das 9h às 11:30 e das 14h às 17h. Contatos feitos após esse horário só serão retornados no próximo dia útil, em horário comercial, com ressalvas aos casos de extrema urgência.
+                    </p>
+                    <p>
+                      Nossos canais de atendimento são pelos números telefônicos (53) 991365429, 53 984060833, 53 984324397 e 53 984040489, onde você pode agendar atendimentos, obter informações gerais de audiências, de perícias, bem como contatar nosso setor financeiro.
+                    </p>
+                    <p>
+                      O envio de documentos deve ser feito, obrigatoriamente, por meio do e-mail medeirosjr.associados@gmail.com. Não serão aceitos envios por meio de outras fontes, especialmente WhatsApp, bem como não serão retidos quaisquer documentos no atendimento, ficando o Cliente com a responsabilidade de encaminhá-los na forma digital, de acordo com o que versa a LGPD.
+                    </p>
+                  </div>
                 </div>
 
                 <div>
