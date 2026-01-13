@@ -231,34 +231,22 @@ específicos.
 
                 <div>
                   <h2 className="text-2xl sm:text-3xl font-playfair font-bold text-primary mb-4">
-                    Audiência na Justiça do Trabalho
+                    Das Audiências
                   </h2>
                   <p className="text-base sm:text-lg leading-relaxed text-muted-foreground mb-4">
-                    Nas ações trabalhistas, a primeira audiência é obrigatória, e sua presença é indispensável. Caso o cliente não compareça, o processo poderá ser arquivado.
+                    Especialmente nas ações trabalhistas, a primeira audiência é obrigatória, e sua presença é indispensável. Caso o cliente não compareça, o processo poderá ser arquivado e gerar pagamento de custas e despesas.
                   </p>
                   <p className="text-base sm:text-lg leading-relaxed text-muted-foreground">
-                    Geralmente, após 60 dias da contratação, já é possível conhecer a data da audiência. Assim que obtivermos essa informação, nossa equipe entrará em contato para fornecer os detalhes necessários sobre data, horário e orientações pertinentes.
+                    Geralmente, após 60 dias da contratação e com a documentação toda em ordem, já é possível conhecer a data da audiência. Assim que obtivermos essa informação, nossa equipe entrará em contato para fornecer os detalhes necessários sobre data, horário e orientações pertinentes.
                   </p>
                 </div>
 
                 <div>
                   <h2 className="text-2xl sm:text-3xl font-playfair font-bold text-primary mb-4">
-                    O Tempo dos Processos
+                    Da Possibilidade de Êxito
                   </h2>
                   <p className="text-base sm:text-lg leading-relaxed text-muted-foreground mb-4">
-                    Sabemos o quanto pode ser desafiador lidar com a demora nos processos judiciais. Entretanto, é importante destacar que o andamento de cada etapa não depende apenas do advogado, mas também de diversos fatores externos, como o volume de processos, a atuação de juízes, peritos, servidores, representantes do Ministério Público e recursos nos tribunais superiores.
-                  </p>
-                  <p className="text-base sm:text-lg leading-relaxed text-muted-foreground">
-                    Além disso, quando o processo chega à fase dos tribunais, o tempo pode ser consideravelmente maior devido à sobrecarga enfrentada pelo sistema judiciário. Infelizmente, essas circunstâncias muitas vezes estão além do alcance da advocacia.
-                  </p>
-                </div>
-
-                <div>
-                  <h2 className="text-2xl sm:text-3xl font-playfair font-bold text-primary mb-4">
-                    A Possibilidade de Êxito
-                  </h2>
-                  <p className="text-base sm:text-lg leading-relaxed text-muted-foreground mb-4">
-                    Uma das maiores preocupações dos nossos clientes é saber se irão vencer a ação. No entanto, ressaltamos que o sucesso de um processo depende de inúmeros fatores, como interpretação de provas, testemunhas, documentos apresentados e a própria postura dos juízes quanto à aplicação das leis.
+                    Uma das maiores preocupações dos nossos clientes é saber se irão vencer a ação. No entanto, ressaltamos que o sucesso de um processo depende de inúmeros fatores, como interpretação de provas, testemunhas, documentos apresentados, a própria postura da parte e a dos juízes quanto à aplicação das leis.
                   </p>
                   <p className="text-base sm:text-lg leading-relaxed text-muted-foreground">
                     Embora seja possível avaliar tendências jurisprudenciais, não podemos garantir o resultado. Nosso compromisso é trabalhar com ética, técnica e dedicação para buscar sempre as melhores alternativas para o seu caso.
@@ -267,18 +255,22 @@ específicos.
 
                 <div>
                   <h2 className="text-2xl sm:text-3xl font-playfair font-bold text-primary mb-4">
-                    O Pagamento do Processo: Quando Ocorre?
+                    Quando Ocorre o Pagamento do Meu Processo?
                   </h2>
                   <p className="text-base sm:text-lg leading-relaxed text-muted-foreground mb-4">
-                    Quando o processo chega ao fim e a Justiça reconhece o direito do cliente, inicia-se a fase de execução, onde o valor reconhecido é liquidado e transformado em um montante exato a ser pago.
+                    Quando o processo chega ao fim e a justiça reconhece o direito do cliente, inicia-se a fase de execução, onde havendo valores a receber esse é liquidado e transformado em um montante exato a ser pago.
                   </p>
                   <p className="text-base sm:text-lg leading-relaxed text-muted-foreground mb-4">
-                    Essa fase, contudo, pode ser tão ou mais demorada que o processo principal, pois envolve etapas burocráticas como cálculos, impugnações, penhoras, leilões e outros trâmites legais. Nosso trabalho é manter você informado e conduzido com segurança durante todo o processo.
+                    Essa fase, contudo, pode ser tão ou mais demorada que o processo principal, pois envolve etapas burocráticas como cálculos, impugnações, penhoras, leilões e outros trâmites legais.
                   </p>
-                  <p className="text-base sm:text-lg leading-relaxed text-muted-foreground">
+                  <p className="text-base sm:text-lg leading-relaxed text-muted-foreground mb-4">
                     Se o processo envolver órgãos públicos, ele seguirá para a fase de precatórios, que exige habilitação no orçamento da administração pública. Ainda que regularmente prevista em lei, o pagamento pelos entes públicos nem sempre ocorre dentro do prazo estipulado.
                   </p>
+                  <p className="text-base sm:text-lg leading-relaxed text-muted-foreground">
+                    Nosso trabalho é manter você informado, além de conduzi-lo com segurança durante todas as etapas.
+                  </p>
                 </div>
+
 
                 <div className="bg-accent/5 border-l-4 border-accent p-6 sm:p-8 rounded-r-lg">
                   <h2 className="text-2xl sm:text-3xl font-playfair font-bold text-primary mb-4">
