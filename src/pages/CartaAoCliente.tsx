@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { ArrowLeft, Scale, FileText, Clock, Users, Shield, AlertTriangle, Phone } from "lucide-react";
+import { ArrowLeft, Scale, FileText, Clock, Users, Shield, AlertTriangle, Phone, Mail, MessageSquare } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
 import Header from "@/components/Header";
@@ -155,22 +155,77 @@ específicos.
                 </div>
 
                 <div className="bg-blue-50 border-l-4 border-blue-500 p-6 sm:p-8 rounded-r-lg">
-                  <div className="flex items-center gap-3 mb-4">
+                  <div className="flex items-center gap-3 mb-6">
                     <Phone className="h-8 w-8 text-blue-700 flex-shrink-0" />
                     <h2 className="text-2xl sm:text-3xl font-playfair font-bold text-blue-700">
                       Central de Atendimento
                     </h2>
                   </div>
-                  <div className="space-y-4 text-base sm:text-lg leading-relaxed text-blue-900">
-                    <p>
-                      O escritório conta com uma central de atendimento especialmente criada para atender você. Nossos horários de atendimento são: de segunda a quinta-feira, das 9h às 11:30 e das 14h às 17h. Contatos feitos após esse horário só serão retornados no próximo dia útil, em horário comercial, com ressalvas aos casos de extrema urgência.
-                    </p>
-                    <p>
-                      Nossos canais de atendimento são pelos números telefônicos (53) 991365429, 53 984060833, 53 984324397 e 53 984040489, onde você pode agendar atendimentos, obter informações gerais de audiências, de perícias, bem como contatar nosso setor financeiro.
-                    </p>
-                    <p>
-                      O envio de documentos deve ser feito, obrigatoriamente, por meio do e-mail <a href="mailto:medeirosjr.associados@gmail.com" className="font-semibold underline hover:text-blue-600 transition-colors">medeirosjr.associados@gmail.com</a>. Não serão aceitos envios por meio de outras fontes, especialmente WhatsApp, bem como não serão retidos quaisquer documentos no atendimento, ficando o Cliente com a responsabilidade de encaminhá-los na forma digital, de acordo com o que versa a LGPD.
-                    </p>
+                  
+                  <div className="space-y-6 text-base sm:text-lg leading-relaxed text-blue-900">
+                    {/* Horários */}
+                    <div className="bg-white/60 rounded-xl p-4 sm:p-5">
+                      <div className="flex items-center gap-2 mb-2">
+                        <Clock className="h-5 w-5 text-blue-600" />
+                        <span className="font-semibold text-blue-800">Horário de Atendimento</span>
+                      </div>
+                      <p className="text-blue-700">
+                        Segunda a quinta-feira: <strong>9h às 11:30</strong> e <strong>14h às 17h</strong>
+                      </p>
+                      <p className="text-sm text-blue-600 mt-1">
+                        Contatos fora deste horário serão retornados no próximo dia útil.
+                      </p>
+                    </div>
+
+                    {/* Telefones */}
+                    <div className="bg-white/60 rounded-xl p-4 sm:p-5">
+                      <div className="flex items-center gap-2 mb-3">
+                        <MessageSquare className="h-5 w-5 text-blue-600" />
+                        <span className="font-semibold text-blue-800">Telefones / WhatsApp</span>
+                      </div>
+                      <div className="grid grid-cols-2 gap-2 sm:gap-3">
+                        <a href="tel:+5553991365429" className="flex items-center gap-2 bg-blue-100 hover:bg-blue-200 rounded-lg px-3 py-2 transition-colors">
+                          <Phone className="h-4 w-4 text-blue-600" />
+                          <span className="text-sm sm:text-base font-medium">(53) 99136-5429</span>
+                        </a>
+                        <a href="tel:+5553984060833" className="flex items-center gap-2 bg-blue-100 hover:bg-blue-200 rounded-lg px-3 py-2 transition-colors">
+                          <Phone className="h-4 w-4 text-blue-600" />
+                          <span className="text-sm sm:text-base font-medium">(53) 98406-0833</span>
+                        </a>
+                        <a href="tel:+5553984324397" className="flex items-center gap-2 bg-blue-100 hover:bg-blue-200 rounded-lg px-3 py-2 transition-colors">
+                          <Phone className="h-4 w-4 text-blue-600" />
+                          <span className="text-sm sm:text-base font-medium">(53) 98432-4397</span>
+                        </a>
+                        <a href="tel:+5553984040489" className="flex items-center gap-2 bg-blue-100 hover:bg-blue-200 rounded-lg px-3 py-2 transition-colors">
+                          <Phone className="h-4 w-4 text-blue-600" />
+                          <span className="text-sm sm:text-base font-medium">(53) 98404-0489</span>
+                        </a>
+                      </div>
+                      <p className="text-sm text-blue-600 mt-3">
+                        Agende atendimentos, obtenha informações sobre audiências, perícias e setor financeiro.
+                      </p>
+                    </div>
+
+                    {/* E-mails */}
+                    <div className="bg-white/60 rounded-xl p-4 sm:p-5">
+                      <div className="flex items-center gap-2 mb-3">
+                        <Mail className="h-5 w-5 text-blue-600" />
+                        <span className="font-semibold text-blue-800">E-mails</span>
+                      </div>
+                      <div className="space-y-2">
+                        <a href="mailto:escritorio@medeirosjr.adv.br" className="flex items-center gap-2 bg-blue-100 hover:bg-blue-200 rounded-lg px-3 py-2 transition-colors w-full">
+                          <Mail className="h-4 w-4 text-blue-600 flex-shrink-0" />
+                          <span className="text-sm sm:text-base font-medium truncate">escritorio@medeirosjr.adv.br</span>
+                        </a>
+                        <a href="mailto:medeirosjr.associados@gmail.com" className="flex items-center gap-2 bg-blue-100 hover:bg-blue-200 rounded-lg px-3 py-2 transition-colors w-full">
+                          <Mail className="h-4 w-4 text-blue-600 flex-shrink-0" />
+                          <span className="text-sm sm:text-base font-medium truncate">medeirosjr.associados@gmail.com</span>
+                        </a>
+                      </div>
+                      <p className="text-sm text-blue-600 mt-3">
+                        O envio de documentos deve ser feito obrigatoriamente por e-mail. Não serão aceitos envios por WhatsApp, conforme a LGPD.
+                      </p>
+                    </div>
                   </div>
                 </div>
 
