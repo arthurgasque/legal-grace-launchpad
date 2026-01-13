@@ -6,16 +6,12 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import BackToTop from "@/components/BackToTop";
-
 const CartaAoCliente = () => {
   const navigate = useNavigate();
-
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
-  return (
-    <div className="min-h-screen bg-background">
+  return <div className="min-h-screen bg-background">
       <Header />
       
       <main className="pt-24 pb-16">
@@ -23,11 +19,7 @@ const CartaAoCliente = () => {
         <section className="bg-gradient-dark py-16 sm:py-20">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-4xl mx-auto text-center">
-              <Button
-                variant="link"
-                className="mb-6 text-white hover:text-white/80 p-0"
-                onClick={() => navigate("/")}
-              >
+              <Button variant="link" className="mb-6 text-white hover:text-white/80 p-0" onClick={() => navigate("/")}>
                 <ArrowLeft className="mr-2 h-4 w-4" />
                 Voltar ao site
               </Button>
@@ -117,7 +109,11 @@ const CartaAoCliente = () => {
                     Honorários e Consultas
                   </h2>
                   <p className="text-base sm:text-lg leading-relaxed text-muted-foreground mb-4">
-                    As consultas realizadas no momento inicial do atendimento ou ao longo do andamento processual, em regra, não são cobradas.
+                    Honorários e Consultas
+As consultas realizadas no momento inicial do atendimento ou ao longo do
+andamento processual, em regra, não são cobradas, com ressalva aos casos
+específicos.
+ 
                   </p>
                   <p className="text-base sm:text-lg leading-relaxed text-muted-foreground">
                     Os honorários advocatícios geralmente correspondem a um percentual sobre o benefício financeiro obtido com a solução do caso e são acordados de forma transparente, conforme as especificidades de cada situação.
@@ -223,16 +219,9 @@ const CartaAoCliente = () => {
                 <p className="text-lg text-muted-foreground mb-6">
                   Ficou com alguma dúvida? Entre em contato conosco
                 </p>
-                <Button
-                  size="lg"
-                  className="bg-gradient-red hover:opacity-90 text-lg px-8 py-6"
-                  onClick={() => {
-                    window.open(
-                      `https://wa.me/XXXXXXXX?text=Olá, li a Carta ao Cliente e gostaria de mais informações`,
-                      "_blank"
-                    );
-                  }}
-                >
+                <Button size="lg" className="bg-gradient-red hover:opacity-90 text-lg px-8 py-6" onClick={() => {
+                window.open(`https://wa.me/XXXXXXXX?text=Olá, li a Carta ao Cliente e gostaria de mais informações`, "_blank");
+              }}>
                   Falar com Advogado
                 </Button>
               </div>
@@ -244,8 +233,6 @@ const CartaAoCliente = () => {
       <Footer />
       <WhatsAppButton />
       <BackToTop />
-    </div>
-  );
+    </div>;
 };
-
 export default CartaAoCliente;
